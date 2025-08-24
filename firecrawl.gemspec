@@ -1,7 +1,9 @@
+require_relative 'lib/firecrawl/version'
+
 Gem::Specification.new do | spec |
 
   spec.name             = 'firecrawl'
-  spec.version          = '0.2.0'
+  spec.version          = Firecrawl::VERSION
   spec.authors          = [ 'Kristoph Cichocki-Romanov' ]
   spec.email            = [ 'rubygems.org@kristoph.net' ]
 
@@ -28,8 +30,8 @@ Gem::Specification.new do | spec |
   spec.files            = Dir[ "lib/**/*.rb", "LICENSE", "README.md", "firecrawl.gemspec" ]
   spec.require_paths    = [ "lib" ]
 
-  spec.add_runtime_dependency 'faraday', '~> 2.7'
-  spec.add_runtime_dependency 'dynamicschema', '~> 1.0.0.beta04'
+  spec.add_runtime_dependency 'faraday', '~> 2'
+  spec.add_runtime_dependency 'dynamicschema', '~> 1'
 
   spec.add_development_dependency 'rspec', '~> 3.13'
   spec.add_development_dependency 'debug', '~> 1.9'

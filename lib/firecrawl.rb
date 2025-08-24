@@ -5,6 +5,8 @@ require 'uri'
 require 'faraday'
 require 'dynamic_schema'
 
+require_relative 'firecrawl/version'
+
 require_relative 'firecrawl/helpers'
 require_relative 'firecrawl/error_result'
 require_relative 'firecrawl/request'
