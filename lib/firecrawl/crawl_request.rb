@@ -57,6 +57,11 @@ module Firecrawl
       if options
         options = options.is_a?( CrawlOptions ) ? options : CrawlOptions.build( options.to_h ) 
         options = options.to_h
+
+        scrape_options = options[ :scrapeOptions ]
+        if scrape_options 
+          options[ :scrapeOptions ] = ScrapeOptions.normalize_options( scrape_options )
+        end 
       else 
         options = {}
       end
@@ -65,8 +70,7 @@ module Firecrawl
       result = nil 
       attributes = JSON.parse( response.body, symbolize_names: true ) rescue nil
       if response.success?
-        attributes ||= { success: false, status: :failed  }
-        result = CrawlResult.new( attributes[ :success ], attributes )
+        result = CrawlResult.new( attributes )
       else 
         result = ErrorResult.new( response.status, attributes )
       end
@@ -96,7 +100,7 @@ module Firecrawl
       result = nil 
       attributes = JSON.parse( response.body, symbolize_names: true ) rescue nil
       if response.success? 
-        result = crawl_result.merge( attributes || { success: false, status: :failed  } )
+        result = crawl_result.merge_attributes( attributes || { success: false, status: :failed  } )
       else 
         result = ErrorResult.new( response.status, attributes || {} )
       end 
@@ -123,7 +127,7 @@ module Firecrawl
       result = nil 
       attributes = JSON.parse( response.body, symbolize_names: true ) rescue nil
       if response.success? 
-        result = crawl_result.merge( attributes || { success: false, status: :failed  } )
+        result = crawl_result.merge_attributes( attributes || { success: false, status: :failed  } )
       else 
         result = ErrorResult.new( response.status, attributes || {} )
       end 

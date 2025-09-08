@@ -3,14 +3,14 @@
     {
       "request": {
         "method": "post",
-        "uri": "https://api.firecrawl.dev/v1/scrape",
+        "uri": "https://api.firecrawl.dev/v2/scrape",
         "body": {
           "encoding": "UTF-8",
           "string": "{\"onlyMainContent\":false,\"url\":\"https://www.iana.org/help/example-domains\"}"
         },
         "headers": {
           "User-Agent": [
-            "Faraday v2.12.0"
+            "Faraday v2.13.4"
           ],
           "Authorization": [
             "Bearer <TOKEN>"
@@ -36,13 +36,13 @@
             "application/json; charset=utf-8"
           ],
           "content-length": [
-            "2156"
+            "2872"
           ],
           "etag": [
-            "W/\"86c-tIxBMT6NFGS1Q/0JZbf5DB6PZMQ\""
+            "W/\"b38-relvouWz+YlYW+nr8OG+JZFboM0\""
           ],
           "date": [
-            "Fri, 08 Nov 2024 04:33:29 GMT"
+            "Sat, 06 Sep 2025 15:45:58 GMT"
           ],
           "via": [
             "1.1 google"
@@ -53,10 +53,10 @@
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"success\":true,\"data\":{\"markdown\":\"[![Homepage](/_img/2022/iana-logo-header.svg)](/)\\n\\n- [Domains](/domains)\\n- [Protocols](/protocols)\\n- [Numbers](/numbers)\\n- [About](/about)\\n\\n# Example Domains\\n\\nAs described in [RFC 2606](/go/rfc2606) and [RFC 6761](/go/rfc6761), a\\nnumber of domains such as example.com and example.org are maintained\\nfor documentation purposes. These domains may be used as illustrative\\nexamples in documents without prior coordination with us. They are not\\navailable for registration or transfer.\\n\\nWe provide a web service on the example domain hosts to provide basic\\ninformation on the purpose of the domain. These web services are\\nprovided as best effort, but are not designed to support production\\napplications. While incidental traffic for incorrectly configured\\napplications is expected, please do not design applications that require\\nthe example domains to have operating HTTP service.\\n\\n## Further Reading\\n\\n- [IANA-managed Reserved Domains](/domains/reserved)\\n\\nLast revised 2017-05-13.\\n\\n|     |     |\\n| --- | --- |\\n| [Domain Names](/domains) | - [Root Zone Registry](/domains/root)<br>- [.INT Registry](/domains/int)<br>- [.ARPA Registry](/domains/arpa)<br>- [IDN Repository](/domains/idn-tables) |\\n| [Number Resources](/numbers) | - [Abuse Information](/abuse) |\\n| [Protocols](/protocols) | - [Protocol Registries](/protocols)<br>- [Time Zone Database](/time-zones) |\\n| [About Us](/about) | - [Performance](/performance)<br>- [Reports](/reports)<br>- [Reviews](/reviews)<br>- [Excellence](/about/excellence)<br>- [Contact Us](/contact) |\\n\\nThe IANA functions coordinate the Internet’s globally unique identifiers, and\\nare provided by [Public Technical Identifiers](http://pti.icann.org), an affiliate of\\n[ICANN](http://www.icann.org/).\\n\\n- [Privacy Policy](https://www.icann.org/privacy/policy)\\n- [Terms of Service](https://www.icann.org/privacy/tos)\",\"metadata\":{\"title\":\"Example Domains\",\"ogLocaleAlternate\":[],\"viewport\":\"width=device-width, initial-scale=1\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200}}}"
+          "string": "{\"success\":true,\"data\":{\"markdown\":\"[![Homepage](https://www.iana.org/_img/2025.01/iana-logo-header.svg)](https://www.iana.org/)\\n\\n- [Domains](https://www.iana.org/domains)\\n- [Protocols](https://www.iana.org/protocols)\\n- [Numbers](https://www.iana.org/numbers)\\n- [About](https://www.iana.org/about)\\n\\n# Example Domains\\n\\nAs described in [RFC 2606](https://www.iana.org/go/rfc2606) and [RFC 6761](https://www.iana.org/go/rfc6761), a\\nnumber of domains such as example.com and example.org are maintained\\nfor documentation purposes. These domains may be used as illustrative\\nexamples in documents without prior coordination with us. They are not\\navailable for registration or transfer.\\n\\nWe provide a web service on the example domain hosts to provide basic\\ninformation on the purpose of the domain. These web services are\\nprovided as best effort, but are not designed to support production\\napplications. While incidental traffic for incorrectly configured\\napplications is expected, please do not design applications that require\\nthe example domains to have operating HTTP service.\\n\\n## Further Reading\\n\\n- [IANA-managed Reserved Domains](https://www.iana.org/domains/reserved)\\n\\nLast revised 2017-05-13.\\n\\n|     |     |\\n| --- | --- |\\n| [Domain Names](https://www.iana.org/domains) | - [Root Zone Registry](https://www.iana.org/domains/root)<br>- [.INT Registry](https://www.iana.org/domains/int)<br>- [.ARPA Registry](https://www.iana.org/domains/arpa)<br>- [IDN Repository](https://www.iana.org/domains/idn-tables) |\\n| [Number Resources](https://www.iana.org/numbers) | - [Abuse Information](https://www.iana.org/abuse) |\\n| [Protocols](https://www.iana.org/protocols) | - [Protocol Registries](https://www.iana.org/protocols)<br>- [Time Zone Database](https://www.iana.org/time-zones) |\\n| [About Us](https://www.iana.org/about) | - [News](https://www.iana.org/news)<br>- [Performance](https://www.iana.org/performance)<br>- [Excellence](https://www.iana.org/about/excellence)<br>- [Archive](https://www.iana.org/archive)<br>- [Contact Us](https://www.iana.org/contact) |\\n\\nThe IANA functions coordinate the Internet’s globally unique identifiers, and\\nare provided by [Public Technical Identifiers](https://pti.icann.org/), an affiliate of\\n[ICANN](http://www.icann.org/).\\n\\n- [Privacy Policy](https://www.icann.org/privacy/policy)\\n- [Terms of Service](https://www.icann.org/privacy/tos)\",\"metadata\":{\"title\":\"Example Domains\",\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"a5afa3e0-08d4-456c-9ea4-f795ce1393cf\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:45:57.528Z\",\"creditsUsed\":1}}}"
         }
       },
-      "recorded_at": "Fri, 08 Nov 2024 04:33:29 GMT"
+      "recorded_at": "Sat, 06 Sep 2025 15:45:58 GMT"
     }
   ],
   "recorded_with": "VCR 6.3.1"

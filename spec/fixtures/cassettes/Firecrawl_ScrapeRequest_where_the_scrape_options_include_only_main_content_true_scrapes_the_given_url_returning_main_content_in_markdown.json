@@ -3,14 +3,14 @@
     {
       "request": {
         "method": "post",
-        "uri": "https://api.firecrawl.dev/v1/scrape",
+        "uri": "https://api.firecrawl.dev/v2/scrape",
         "body": {
           "encoding": "UTF-8",
           "string": "{\"url\":\"https://www.iana.org/help/example-domains\"}"
         },
         "headers": {
           "User-Agent": [
-            "Faraday v2.12.0"
+            "Faraday v2.13.4"
           ],
           "Authorization": [
             "Bearer <TOKEN>"
@@ -36,13 +36,13 @@
             "application/json; charset=utf-8"
           ],
           "content-length": [
-            "1126"
+            "1403"
           ],
           "etag": [
-            "W/\"466-rNzl/jO6MLZER5En1Q0mcb+YKUU\""
+            "W/\"57b-W8e17RAlVgWt6CglpihZr+NaaUw\""
           ],
           "date": [
-            "Fri, 08 Nov 2024 04:33:30 GMT"
+            "Sat, 06 Sep 2025 15:45:59 GMT"
           ],
           "via": [
             "1.1 google"
@@ -53,10 +53,10 @@
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"success\":true,\"data\":{\"markdown\":\"# Example Domains\\n\\nAs described in [RFC 2606](/go/rfc2606) and [RFC 6761](/go/rfc6761), a\\nnumber of domains such as example.com and example.org are maintained\\nfor documentation purposes. These domains may be used as illustrative\\nexamples in documents without prior coordination with us. They are not\\navailable for registration or transfer.\\n\\nWe provide a web service on the example domain hosts to provide basic\\ninformation on the purpose of the domain. These web services are\\nprovided as best effort, but are not designed to support production\\napplications. While incidental traffic for incorrectly configured\\napplications is expected, please do not design applications that require\\nthe example domains to have operating HTTP service.\\n\\n## Further Reading\\n\\n- [IANA-managed Reserved Domains](/domains/reserved)\\n\\nLast revised 2017-05-13.\",\"metadata\":{\"title\":\"Example Domains\",\"ogLocaleAlternate\":[],\"viewport\":\"width=device-width, initial-scale=1\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200}}}"
+          "string": "{\"success\":true,\"data\":{\"markdown\":\"# Example Domains\\n\\nAs described in [RFC 2606](https://www.iana.org/go/rfc2606) and [RFC 6761](https://www.iana.org/go/rfc6761), a\\nnumber of domains such as example.com and example.org are maintained\\nfor documentation purposes. These domains may be used as illustrative\\nexamples in documents without prior coordination with us. They are not\\navailable for registration or transfer.\\n\\nWe provide a web service on the example domain hosts to provide basic\\ninformation on the purpose of the domain. These web services are\\nprovided as best effort, but are not designed to support production\\napplications. While incidental traffic for incorrectly configured\\napplications is expected, please do not design applications that require\\nthe example domains to have operating HTTP service.\\n\\n## Further Reading\\n\\n- [IANA-managed Reserved Domains](https://www.iana.org/domains/reserved)\\n\\nLast revised 2017-05-13.\",\"metadata\":{\"viewport\":\"width=device-width, initial-scale=1\",\"title\":\"Example Domains\",\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"scrapeId\":\"dc364cd2-f959-4135-847c-11296416c020\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:45:58.166Z\",\"creditsUsed\":1}}}"
         }
       },
-      "recorded_at": "Fri, 08 Nov 2024 04:33:30 GMT"
+      "recorded_at": "Sat, 06 Sep 2025 15:45:59 GMT"
     }
   ],
   "recorded_with": "VCR 6.3.1"

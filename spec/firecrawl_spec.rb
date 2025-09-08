@@ -39,7 +39,6 @@ RSpec.describe Firecrawl do
         expect( result.links ).to eq( [] )
         expect( result.screenshot_url ).to be_nil
         expect( result.actions ).to eq( {} )
-        expect( result.llm_extraction ).to eq( {} )
         expect( result.warning ).to be_nil
       end 
     end
@@ -72,11 +71,9 @@ RSpec.describe Firecrawl do
         expect( result.links ).to eq( [] )
         expect( result.screenshot_url ).to be_nil
         expect( result.actions ).to eq( {} )
-        expect( result.llm_extraction ).to eq( {} )
         expect( result.warning ).to be_nil
       end 
     end
 
   end
 end 
-

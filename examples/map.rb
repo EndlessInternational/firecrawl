@@ -10,8 +10,9 @@ response = request.submit( ARGV[ 0 ] || "https://www.iana.org", options )
 if response.success?
   result = response.result 
   if result.success? 
-    result.links.each do | link |
-      puts link 
+    result.each do | link |
+      puts link.title
+      puts link.url
     end 
   end 
 else 

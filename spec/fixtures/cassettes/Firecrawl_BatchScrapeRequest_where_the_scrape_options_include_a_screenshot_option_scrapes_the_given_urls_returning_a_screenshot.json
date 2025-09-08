@@ -1,0 +1,585 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape/203364e0-0a2b-43cf-a16b-72ee9d99191c",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "2101"
+          ],
+          "etag": [
+            "W/\"835-QOKSgtkFoP6QbybExDdXCgDbJoE\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 15:48:02 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"status\":\"scraping\",\"completed\":1,\"total\":2,\"creditsUsed\":2,\"expiresAt\":\"2025-09-07T15:48:02.000Z\",\"data\":[{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-1fab8ee0-f82b-44f5-83b1-758eec54c044.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757619294&Signature=hZQ5vqd0Dp%2B0FZaTlKms2DF1HTntoOuQCfOfV7oLuS%2F13%2FtN9pGB809o3SPOtV%2FHafgi6mv67WuWqfKtkunE7GYRaVnTBQmgacXxzfRV4WHJNfknOEfYPO07aczl%2BmMmnjxqHrjVjqu2MXCyLYyNZU1VvldCMdEA2qG6RCxCGwgu1HFG%2BJqtihPWgkp8hekMDT4DQ6Drll8KV8ZBSGTU%2BsAbimEIWeBz3TULLya9%2B27LxSJBwXHQKSdHcydfwSPc7tjdk8n83VrvZ4gv4zF6WIw7Ys676PIm3%2BJ23cZAOe1375LUu7m0VS%2BR3Vzw%2FnVRiQsX8Mt1xtQUZup4%2FbGJgQ%3D%3D\",\"metadata\":{\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"viewport\":\"width=device-width, initial-scale=1\",\"title\":\"Example Domains\",\"scrapeId\":\"04f17c0e-7f23-4dc0-9052-b0b7b0ede9e4\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:46:07.972Z\",\"creditsUsed\":1}},{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-42499dbb-e6c1-4337-8a81-773052d5949f.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757760949&Signature=fRudPyrdXSSdGXUwHl0KaA0tvl6lZSFPthIH6Nf70R32X6RQt1ETzD7%2FtlBOOl1BMOd8c3bzCHBzGQ0ExYAHa1oVY5pEL4IF1nb1H44wx1SbT5DwIxNhkIvccx6WRAychCVYpo18n7HzFSKxdMsiGTzxN9%2BGaAVqw7QSj3A5hyMBDfmVcZwUzo5rCKGPIkzGOyRueVxZx6JuCuTV6Ohh9CElcMed3dxOb3iLWuYyYThErAuhaMk9ewbwS1FQoIILR37DZawDyqHzVORv2%2BQJ%2Bc9ePfnQBK10eKbnbBzcXc%2F21obaXxy6xFCO2zL8vkREgiCXW5AKoFtRCKGOemM%2F2g%3D%3D\",\"metadata\":{\"title\":\"Example Domain\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"acdeae01-fb60-4020-a146-10034c932f52\",\"sourceURL\":\"https://example.com\",\"url\":\"https://www.example.com/\",\"statusCode\":200,\"contentType\":\"text/html\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:40:19.946Z\",\"creditsUsed\":1}}]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 15:48:02 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape/d044e0bf-a42e-4c5d-a837-be3bf1590c41",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "2102"
+          ],
+          "etag": [
+            "W/\"836-NHWxRE/fzd5hU3h1UQpgK4tIl1g\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 15:48:13 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"status\":\"completed\",\"completed\":2,\"total\":2,\"creditsUsed\":2,\"expiresAt\":\"2025-09-07T15:48:13.000Z\",\"data\":[{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-1fab8ee0-f82b-44f5-83b1-758eec54c044.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757619294&Signature=hZQ5vqd0Dp%2B0FZaTlKms2DF1HTntoOuQCfOfV7oLuS%2F13%2FtN9pGB809o3SPOtV%2FHafgi6mv67WuWqfKtkunE7GYRaVnTBQmgacXxzfRV4WHJNfknOEfYPO07aczl%2BmMmnjxqHrjVjqu2MXCyLYyNZU1VvldCMdEA2qG6RCxCGwgu1HFG%2BJqtihPWgkp8hekMDT4DQ6Drll8KV8ZBSGTU%2BsAbimEIWeBz3TULLya9%2B27LxSJBwXHQKSdHcydfwSPc7tjdk8n83VrvZ4gv4zF6WIw7Ys676PIm3%2BJ23cZAOe1375LUu7m0VS%2BR3Vzw%2FnVRiQsX8Mt1xtQUZup4%2FbGJgQ%3D%3D\",\"metadata\":{\"title\":\"Example Domains\",\"viewport\":\"width=device-width, initial-scale=1\",\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"scrapeId\":\"7bb669dc-b860-43bd-9980-f0c80141219d\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:48:02.017Z\",\"creditsUsed\":1}},{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-42499dbb-e6c1-4337-8a81-773052d5949f.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757760949&Signature=fRudPyrdXSSdGXUwHl0KaA0tvl6lZSFPthIH6Nf70R32X6RQt1ETzD7%2FtlBOOl1BMOd8c3bzCHBzGQ0ExYAHa1oVY5pEL4IF1nb1H44wx1SbT5DwIxNhkIvccx6WRAychCVYpo18n7HzFSKxdMsiGTzxN9%2BGaAVqw7QSj3A5hyMBDfmVcZwUzo5rCKGPIkzGOyRueVxZx6JuCuTV6Ohh9CElcMed3dxOb3iLWuYyYThErAuhaMk9ewbwS1FQoIILR37DZawDyqHzVORv2%2BQJ%2Bc9ePfnQBK10eKbnbBzcXc%2F21obaXxy6xFCO2zL8vkREgiCXW5AKoFtRCKGOemM%2F2g%3D%3D\",\"metadata\":{\"title\":\"Example Domain\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"8dd227fc-e6bc-4e7c-a2b1-11cbed0f4b2c\",\"sourceURL\":\"https://example.com\",\"url\":\"https://www.example.com/\",\"statusCode\":200,\"contentType\":\"text/html\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:48:02.065Z\",\"creditsUsed\":1}}]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 15:48:13 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape/ae54f0b1-c647-4762-9a45-816334568cd9",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "2101"
+          ],
+          "etag": [
+            "W/\"835-YlUvwKajYnzCLCFPioDZ+OHpHeU\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 15:48:15 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"status\":\"scraping\",\"completed\":1,\"total\":2,\"creditsUsed\":2,\"expiresAt\":\"2025-09-07T15:48:15.000Z\",\"data\":[{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-1fab8ee0-f82b-44f5-83b1-758eec54c044.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757619294&Signature=hZQ5vqd0Dp%2B0FZaTlKms2DF1HTntoOuQCfOfV7oLuS%2F13%2FtN9pGB809o3SPOtV%2FHafgi6mv67WuWqfKtkunE7GYRaVnTBQmgacXxzfRV4WHJNfknOEfYPO07aczl%2BmMmnjxqHrjVjqu2MXCyLYyNZU1VvldCMdEA2qG6RCxCGwgu1HFG%2BJqtihPWgkp8hekMDT4DQ6Drll8KV8ZBSGTU%2BsAbimEIWeBz3TULLya9%2B27LxSJBwXHQKSdHcydfwSPc7tjdk8n83VrvZ4gv4zF6WIw7Ys676PIm3%2BJ23cZAOe1375LUu7m0VS%2BR3Vzw%2FnVRiQsX8Mt1xtQUZup4%2FbGJgQ%3D%3D\",\"metadata\":{\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"title\":\"Example Domains\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"641e2706-1039-4a72-8dd2-50e60b93f866\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:48:08.502Z\",\"creditsUsed\":1}},{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-42499dbb-e6c1-4337-8a81-773052d5949f.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757760949&Signature=fRudPyrdXSSdGXUwHl0KaA0tvl6lZSFPthIH6Nf70R32X6RQt1ETzD7%2FtlBOOl1BMOd8c3bzCHBzGQ0ExYAHa1oVY5pEL4IF1nb1H44wx1SbT5DwIxNhkIvccx6WRAychCVYpo18n7HzFSKxdMsiGTzxN9%2BGaAVqw7QSj3A5hyMBDfmVcZwUzo5rCKGPIkzGOyRueVxZx6JuCuTV6Ohh9CElcMed3dxOb3iLWuYyYThErAuhaMk9ewbwS1FQoIILR37DZawDyqHzVORv2%2BQJ%2Bc9ePfnQBK10eKbnbBzcXc%2F21obaXxy6xFCO2zL8vkREgiCXW5AKoFtRCKGOemM%2F2g%3D%3D\",\"metadata\":{\"title\":\"Example Domain\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"5ec25e43-3faf-4d1c-8dbe-f4bd44f2dcd7\",\"sourceURL\":\"https://example.com\",\"url\":\"https://www.example.com/\",\"statusCode\":200,\"contentType\":\"text/html\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:48:08.502Z\",\"creditsUsed\":1}}]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 15:48:15 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape/2da83ad7-d567-4db3-a0d4-f8fdd6400ba7",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "2101"
+          ],
+          "etag": [
+            "W/\"835-uWM6Wp0IZ5Ad/D0Chq3FayQT88k\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 15:48:18 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"status\":\"scraping\",\"completed\":0,\"total\":2,\"creditsUsed\":2,\"expiresAt\":\"2025-09-07T15:48:18.000Z\",\"data\":[{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-42499dbb-e6c1-4337-8a81-773052d5949f.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757760949&Signature=fRudPyrdXSSdGXUwHl0KaA0tvl6lZSFPthIH6Nf70R32X6RQt1ETzD7%2FtlBOOl1BMOd8c3bzCHBzGQ0ExYAHa1oVY5pEL4IF1nb1H44wx1SbT5DwIxNhkIvccx6WRAychCVYpo18n7HzFSKxdMsiGTzxN9%2BGaAVqw7QSj3A5hyMBDfmVcZwUzo5rCKGPIkzGOyRueVxZx6JuCuTV6Ohh9CElcMed3dxOb3iLWuYyYThErAuhaMk9ewbwS1FQoIILR37DZawDyqHzVORv2%2BQJ%2Bc9ePfnQBK10eKbnbBzcXc%2F21obaXxy6xFCO2zL8vkREgiCXW5AKoFtRCKGOemM%2F2g%3D%3D\",\"metadata\":{\"title\":\"Example Domain\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"92b44710-d714-4f81-a940-53d4754e97c2\",\"sourceURL\":\"https://example.com\",\"url\":\"https://www.example.com/\",\"statusCode\":200,\"contentType\":\"text/html\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:48:15.547Z\",\"creditsUsed\":1}},{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-1fab8ee0-f82b-44f5-83b1-758eec54c044.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757619294&Signature=hZQ5vqd0Dp%2B0FZaTlKms2DF1HTntoOuQCfOfV7oLuS%2F13%2FtN9pGB809o3SPOtV%2FHafgi6mv67WuWqfKtkunE7GYRaVnTBQmgacXxzfRV4WHJNfknOEfYPO07aczl%2BmMmnjxqHrjVjqu2MXCyLYyNZU1VvldCMdEA2qG6RCxCGwgu1HFG%2BJqtihPWgkp8hekMDT4DQ6Drll8KV8ZBSGTU%2BsAbimEIWeBz3TULLya9%2B27LxSJBwXHQKSdHcydfwSPc7tjdk8n83VrvZ4gv4zF6WIw7Ys676PIm3%2BJ23cZAOe1375LUu7m0VS%2BR3Vzw%2FnVRiQsX8Mt1xtQUZup4%2FbGJgQ%3D%3D\",\"metadata\":{\"title\":\"Example Domains\",\"viewport\":\"width=device-width, initial-scale=1\",\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"scrapeId\":\"2e724173-4891-4a5d-bb73-5eb27c2311eb\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:48:15.547Z\",\"creditsUsed\":1}}]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 15:48:18 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape/6a6a12e2-2fc4-4aae-b36b-2f9edca228b6",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "2101"
+          ],
+          "etag": [
+            "W/\"835-iimVn/Jv9J/tgXQ5ZXZLfzPsqS4\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 15:48:20 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"status\":\"scraping\",\"completed\":0,\"total\":2,\"creditsUsed\":2,\"expiresAt\":\"2025-09-07T15:48:20.000Z\",\"data\":[{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-1fab8ee0-f82b-44f5-83b1-758eec54c044.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757619294&Signature=hZQ5vqd0Dp%2B0FZaTlKms2DF1HTntoOuQCfOfV7oLuS%2F13%2FtN9pGB809o3SPOtV%2FHafgi6mv67WuWqfKtkunE7GYRaVnTBQmgacXxzfRV4WHJNfknOEfYPO07aczl%2BmMmnjxqHrjVjqu2MXCyLYyNZU1VvldCMdEA2qG6RCxCGwgu1HFG%2BJqtihPWgkp8hekMDT4DQ6Drll8KV8ZBSGTU%2BsAbimEIWeBz3TULLya9%2B27LxSJBwXHQKSdHcydfwSPc7tjdk8n83VrvZ4gv4zF6WIw7Ys676PIm3%2BJ23cZAOe1375LUu7m0VS%2BR3Vzw%2FnVRiQsX8Mt1xtQUZup4%2FbGJgQ%3D%3D\",\"metadata\":{\"viewport\":\"width=device-width, initial-scale=1\",\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"title\":\"Example Domains\",\"scrapeId\":\"53d96a17-f58f-4fc6-88df-0466eeb73cea\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:48:17.911Z\",\"creditsUsed\":1}},{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-42499dbb-e6c1-4337-8a81-773052d5949f.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757760949&Signature=fRudPyrdXSSdGXUwHl0KaA0tvl6lZSFPthIH6Nf70R32X6RQt1ETzD7%2FtlBOOl1BMOd8c3bzCHBzGQ0ExYAHa1oVY5pEL4IF1nb1H44wx1SbT5DwIxNhkIvccx6WRAychCVYpo18n7HzFSKxdMsiGTzxN9%2BGaAVqw7QSj3A5hyMBDfmVcZwUzo5rCKGPIkzGOyRueVxZx6JuCuTV6Ohh9CElcMed3dxOb3iLWuYyYThErAuhaMk9ewbwS1FQoIILR37DZawDyqHzVORv2%2BQJ%2Bc9ePfnQBK10eKbnbBzcXc%2F21obaXxy6xFCO2zL8vkREgiCXW5AKoFtRCKGOemM%2F2g%3D%3D\",\"metadata\":{\"viewport\":\"width=device-width, initial-scale=1\",\"title\":\"Example Domain\",\"scrapeId\":\"d6acdbd1-8381-4adc-9450-3f679a86f56c\",\"sourceURL\":\"https://example.com\",\"url\":\"https://www.example.com/\",\"statusCode\":200,\"contentType\":\"text/html\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:48:17.911Z\",\"creditsUsed\":1}}]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 15:48:20 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape/ce5c4923-490e-4f25-a1e9-2dbe15e7980e",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "2101"
+          ],
+          "etag": [
+            "W/\"835-iBtRm0F4wVrcwUkDiQmYXKBVrI8\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 15:48:22 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"status\":\"scraping\",\"completed\":1,\"total\":2,\"creditsUsed\":2,\"expiresAt\":\"2025-09-07T15:48:22.000Z\",\"data\":[{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-1fab8ee0-f82b-44f5-83b1-758eec54c044.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757619294&Signature=hZQ5vqd0Dp%2B0FZaTlKms2DF1HTntoOuQCfOfV7oLuS%2F13%2FtN9pGB809o3SPOtV%2FHafgi6mv67WuWqfKtkunE7GYRaVnTBQmgacXxzfRV4WHJNfknOEfYPO07aczl%2BmMmnjxqHrjVjqu2MXCyLYyNZU1VvldCMdEA2qG6RCxCGwgu1HFG%2BJqtihPWgkp8hekMDT4DQ6Drll8KV8ZBSGTU%2BsAbimEIWeBz3TULLya9%2B27LxSJBwXHQKSdHcydfwSPc7tjdk8n83VrvZ4gv4zF6WIw7Ys676PIm3%2BJ23cZAOe1375LUu7m0VS%2BR3Vzw%2FnVRiQsX8Mt1xtQUZup4%2FbGJgQ%3D%3D\",\"metadata\":{\"title\":\"Example Domains\",\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"a8ce25c2-bc5a-4f04-aa68-fb6116beb756\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:48:19.793Z\",\"creditsUsed\":1}},{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-42499dbb-e6c1-4337-8a81-773052d5949f.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757760949&Signature=fRudPyrdXSSdGXUwHl0KaA0tvl6lZSFPthIH6Nf70R32X6RQt1ETzD7%2FtlBOOl1BMOd8c3bzCHBzGQ0ExYAHa1oVY5pEL4IF1nb1H44wx1SbT5DwIxNhkIvccx6WRAychCVYpo18n7HzFSKxdMsiGTzxN9%2BGaAVqw7QSj3A5hyMBDfmVcZwUzo5rCKGPIkzGOyRueVxZx6JuCuTV6Ohh9CElcMed3dxOb3iLWuYyYThErAuhaMk9ewbwS1FQoIILR37DZawDyqHzVORv2%2BQJ%2Bc9ePfnQBK10eKbnbBzcXc%2F21obaXxy6xFCO2zL8vkREgiCXW5AKoFtRCKGOemM%2F2g%3D%3D\",\"metadata\":{\"viewport\":\"width=device-width, initial-scale=1\",\"title\":\"Example Domain\",\"scrapeId\":\"8dd8760b-6b87-4330-a55b-1635a3f760b1\",\"sourceURL\":\"https://example.com\",\"url\":\"https://www.example.com/\",\"statusCode\":200,\"contentType\":\"text/html\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:48:19.804Z\",\"creditsUsed\":1}}]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 15:48:22 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape/840d4e6b-8165-4b5f-87fb-28e925b3f816",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "2101"
+          ],
+          "etag": [
+            "W/\"835-qXoY4cQsWt/m1iHOeY2NGHyUqk0\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 15:48:24 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"status\":\"scraping\",\"completed\":1,\"total\":2,\"creditsUsed\":2,\"expiresAt\":\"2025-09-07T15:48:23.000Z\",\"data\":[{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-42499dbb-e6c1-4337-8a81-773052d5949f.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757760949&Signature=fRudPyrdXSSdGXUwHl0KaA0tvl6lZSFPthIH6Nf70R32X6RQt1ETzD7%2FtlBOOl1BMOd8c3bzCHBzGQ0ExYAHa1oVY5pEL4IF1nb1H44wx1SbT5DwIxNhkIvccx6WRAychCVYpo18n7HzFSKxdMsiGTzxN9%2BGaAVqw7QSj3A5hyMBDfmVcZwUzo5rCKGPIkzGOyRueVxZx6JuCuTV6Ohh9CElcMed3dxOb3iLWuYyYThErAuhaMk9ewbwS1FQoIILR37DZawDyqHzVORv2%2BQJ%2Bc9ePfnQBK10eKbnbBzcXc%2F21obaXxy6xFCO2zL8vkREgiCXW5AKoFtRCKGOemM%2F2g%3D%3D\",\"metadata\":{\"title\":\"Example Domain\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"2eef9fb6-c3ea-4076-be0a-268d819f9731\",\"sourceURL\":\"https://example.com\",\"url\":\"https://www.example.com/\",\"statusCode\":200,\"contentType\":\"text/html\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:48:21.846Z\",\"creditsUsed\":1}},{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-1fab8ee0-f82b-44f5-83b1-758eec54c044.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757619294&Signature=hZQ5vqd0Dp%2B0FZaTlKms2DF1HTntoOuQCfOfV7oLuS%2F13%2FtN9pGB809o3SPOtV%2FHafgi6mv67WuWqfKtkunE7GYRaVnTBQmgacXxzfRV4WHJNfknOEfYPO07aczl%2BmMmnjxqHrjVjqu2MXCyLYyNZU1VvldCMdEA2qG6RCxCGwgu1HFG%2BJqtihPWgkp8hekMDT4DQ6Drll8KV8ZBSGTU%2BsAbimEIWeBz3TULLya9%2B27LxSJBwXHQKSdHcydfwSPc7tjdk8n83VrvZ4gv4zF6WIw7Ys676PIm3%2BJ23cZAOe1375LUu7m0VS%2BR3Vzw%2FnVRiQsX8Mt1xtQUZup4%2FbGJgQ%3D%3D\",\"metadata\":{\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"viewport\":\"width=device-width, initial-scale=1\",\"title\":\"Example Domains\",\"scrapeId\":\"40aea169-8772-4d2d-8c72-b0561050a354\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:48:21.808Z\",\"creditsUsed\":1}}]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 15:48:24 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape/1870a236-8d0a-4efc-a0a2-f51be1f8595b",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "2102"
+          ],
+          "etag": [
+            "W/\"836-EuLYkGOqdZlfiMqY/scIM0FE0VE\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 15:48:26 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"status\":\"completed\",\"completed\":2,\"total\":2,\"creditsUsed\":2,\"expiresAt\":\"2025-09-07T15:48:26.000Z\",\"data\":[{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-1fab8ee0-f82b-44f5-83b1-758eec54c044.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757619294&Signature=hZQ5vqd0Dp%2B0FZaTlKms2DF1HTntoOuQCfOfV7oLuS%2F13%2FtN9pGB809o3SPOtV%2FHafgi6mv67WuWqfKtkunE7GYRaVnTBQmgacXxzfRV4WHJNfknOEfYPO07aczl%2BmMmnjxqHrjVjqu2MXCyLYyNZU1VvldCMdEA2qG6RCxCGwgu1HFG%2BJqtihPWgkp8hekMDT4DQ6Drll8KV8ZBSGTU%2BsAbimEIWeBz3TULLya9%2B27LxSJBwXHQKSdHcydfwSPc7tjdk8n83VrvZ4gv4zF6WIw7Ys676PIm3%2BJ23cZAOe1375LUu7m0VS%2BR3Vzw%2FnVRiQsX8Mt1xtQUZup4%2FbGJgQ%3D%3D\",\"metadata\":{\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"title\":\"Example Domains\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"0c47cb47-6dcc-4569-8c5f-2fac9f619069\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:48:23.812Z\",\"creditsUsed\":1}},{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-42499dbb-e6c1-4337-8a81-773052d5949f.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757760949&Signature=fRudPyrdXSSdGXUwHl0KaA0tvl6lZSFPthIH6Nf70R32X6RQt1ETzD7%2FtlBOOl1BMOd8c3bzCHBzGQ0ExYAHa1oVY5pEL4IF1nb1H44wx1SbT5DwIxNhkIvccx6WRAychCVYpo18n7HzFSKxdMsiGTzxN9%2BGaAVqw7QSj3A5hyMBDfmVcZwUzo5rCKGPIkzGOyRueVxZx6JuCuTV6Ohh9CElcMed3dxOb3iLWuYyYThErAuhaMk9ewbwS1FQoIILR37DZawDyqHzVORv2%2BQJ%2Bc9ePfnQBK10eKbnbBzcXc%2F21obaXxy6xFCO2zL8vkREgiCXW5AKoFtRCKGOemM%2F2g%3D%3D\",\"metadata\":{\"title\":\"Example Domain\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"09b71131-927e-4774-9e84-f44521c55051\",\"sourceURL\":\"https://example.com\",\"url\":\"https://www.example.com/\",\"statusCode\":200,\"contentType\":\"text/html\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:48:23.812Z\",\"creditsUsed\":1}}]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 15:48:26 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"formats\":[{\"type\":\"screenshot\",\"fullPage\":true}],\"urls\":[\"https://www.iana.org/help/example-domains\",\"https://example.com\"]}"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "164"
+          ],
+          "etag": [
+            "W/\"a4-dAVewY0fIsxDmQBQqFxjOw3UlYs\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 16:03:56 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"id\":\"f43fed8b-693b-4b0d-b2bc-665c8822964c\",\"url\":\"https://api.firecrawl.dev/v2/batch/scrape/f43fed8b-693b-4b0d-b2bc-665c8822964c\",\"invalidURLs\":[]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 16:03:56 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape/f43fed8b-693b-4b0d-b2bc-665c8822964c",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "2101"
+          ],
+          "etag": [
+            "W/\"835-N/2TSuNcvVbKFlMQceLGcLEfWJ0\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 16:03:57 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"status\":\"scraping\",\"completed\":0,\"total\":2,\"creditsUsed\":2,\"expiresAt\":\"2025-09-07T16:03:57.000Z\",\"data\":[{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-42499dbb-e6c1-4337-8a81-773052d5949f.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757760949&Signature=fRudPyrdXSSdGXUwHl0KaA0tvl6lZSFPthIH6Nf70R32X6RQt1ETzD7%2FtlBOOl1BMOd8c3bzCHBzGQ0ExYAHa1oVY5pEL4IF1nb1H44wx1SbT5DwIxNhkIvccx6WRAychCVYpo18n7HzFSKxdMsiGTzxN9%2BGaAVqw7QSj3A5hyMBDfmVcZwUzo5rCKGPIkzGOyRueVxZx6JuCuTV6Ohh9CElcMed3dxOb3iLWuYyYThErAuhaMk9ewbwS1FQoIILR37DZawDyqHzVORv2%2BQJ%2Bc9ePfnQBK10eKbnbBzcXc%2F21obaXxy6xFCO2zL8vkREgiCXW5AKoFtRCKGOemM%2F2g%3D%3D\",\"metadata\":{\"title\":\"Example Domain\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"1ef8e7a2-629c-4ff5-9aef-15e241f29e8f\",\"sourceURL\":\"https://example.com\",\"url\":\"https://www.example.com/\",\"statusCode\":200,\"contentType\":\"text/html\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T16:03:36.040Z\",\"creditsUsed\":1}},{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-1fab8ee0-f82b-44f5-83b1-758eec54c044.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757619294&Signature=hZQ5vqd0Dp%2B0FZaTlKms2DF1HTntoOuQCfOfV7oLuS%2F13%2FtN9pGB809o3SPOtV%2FHafgi6mv67WuWqfKtkunE7GYRaVnTBQmgacXxzfRV4WHJNfknOEfYPO07aczl%2BmMmnjxqHrjVjqu2MXCyLYyNZU1VvldCMdEA2qG6RCxCGwgu1HFG%2BJqtihPWgkp8hekMDT4DQ6Drll8KV8ZBSGTU%2BsAbimEIWeBz3TULLya9%2B27LxSJBwXHQKSdHcydfwSPc7tjdk8n83VrvZ4gv4zF6WIw7Ys676PIm3%2BJ23cZAOe1375LUu7m0VS%2BR3Vzw%2FnVRiQsX8Mt1xtQUZup4%2FbGJgQ%3D%3D\",\"metadata\":{\"title\":\"Example Domains\",\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"b7968a8d-475e-46c1-aca0-c4d28d38e7e5\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T16:03:36.040Z\",\"creditsUsed\":1}}]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 16:03:57 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.3.1"
+}

@@ -6,12 +6,23 @@ module Firecrawl
     schema do 
       exclude_paths         String, as: :excludePaths, array: true
       include_paths         String, as: :includePaths, array: true
-      maximum_depth         Integer, as: :maxDepth 
-      ignore_sitemap        [ TrueClass, FalseClass ], as: :ignoreSitemap 
+      maximum_depth         Integer, as: :maxDiscoveryDepth 
+      sitemap               Symbol, in: [ :skip, :include ] 
       limit                 Integer, in: (0..)
-      allow_backward_links  [ TrueClass, FalseClass ], as: :allowBackwardLinks
+      ignore_query_parameters [ TrueClass, FalseClass ], as: :ignoreQueryParameters
+      crawl_entire_domain   [ TrueClass, FalseClass ], as: :crawlEntireDomain
       allow_external_links  [ TrueClass, FalseClass ], as: :allowExternalLinks
-      webhook_uri           URI, as: :webhook 
+      allow_subdomains      String, as: :allowSubdomains
+      delay                 Integer, in: (0..)
+      max_concurency        Integer, in: (0..), as: :maxConcurrency
+
+      webhook               do 
+        url                 URI, required: true 
+        headers             Hash
+        metadata            Hash 
+        events              Symbol, array: true, in: [ :completed, :page, :failed, :started ]
+      end 
+
       scrape_options        as: :scrapeOptions, &ScrapeOptions.schema
     end
 
@@ -26,11 +37,6 @@ module Firecrawl
     def initialize( options = nil, api_options: nil )
       @options = self.class.builder.build( options || {} )
       @options = api_options.merge( @options ) if api_options 
-      
-      scrape_options = @options[ :scrapeOptions ]
-      if scrape_options 
-        scrape_options[ :formats ]&.map! { | format | string_camelize( format.to_s ) }
-      end 
     end
 
     def to_h

@@ -1,0 +1,179 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape/a5d99991-e799-424c-bc03-5d25f0c05730",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "8844"
+          ],
+          "etag": [
+            "W/\"228c-mjY6SsdliriP+kqIslrrvpoFa6I\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 15:45:42 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"status\":\"scraping\",\"completed\":1,\"total\":2,\"creditsUsed\":2,\"expiresAt\":\"2025-09-07T15:45:42.000Z\",\"data\":[{\"markdown\":\"[![Homepage](https://www.iana.org/_img/2025.01/iana-logo-header.svg)](https://www.iana.org/)\\n\\n- [Domains](https://www.iana.org/domains)\\n- [Protocols](https://www.iana.org/protocols)\\n- [Numbers](https://www.iana.org/numbers)\\n- [About](https://www.iana.org/about)\\n\\n# Example Domains\\n\\nAs described in [RFC 2606](https://www.iana.org/go/rfc2606) and [RFC 6761](https://www.iana.org/go/rfc6761), a\\nnumber of domains such as example.com and example.org are maintained\\nfor documentation purposes. These domains may be used as illustrative\\nexamples in documents without prior coordination with us. They are not\\navailable for registration or transfer.\\n\\nWe provide a web service on the example domain hosts to provide basic\\ninformation on the purpose of the domain. These web services are\\nprovided as best effort, but are not designed to support production\\napplications. While incidental traffic for incorrectly configured\\napplications is expected, please do not design applications that require\\nthe example domains to have operating HTTP service.\\n\\n## Further Reading\\n\\n- [IANA-managed Reserved Domains](https://www.iana.org/domains/reserved)\\n\\nLast revised 2017-05-13.\\n\\n|     |     |\\n| --- | --- |\\n| [Domain Names](https://www.iana.org/domains) | - [Root Zone Registry](https://www.iana.org/domains/root)<br>- [.INT Registry](https://www.iana.org/domains/int)<br>- [.ARPA Registry](https://www.iana.org/domains/arpa)<br>- [IDN Repository](https://www.iana.org/domains/idn-tables) |\\n| [Number Resources](https://www.iana.org/numbers) | - [Abuse Information](https://www.iana.org/abuse) |\\n| [Protocols](https://www.iana.org/protocols) | - [Protocol Registries](https://www.iana.org/protocols)<br>- [Time Zone Database](https://www.iana.org/time-zones) |\\n| [About Us](https://www.iana.org/about) | - [News](https://www.iana.org/news)<br>- [Performance](https://www.iana.org/performance)<br>- [Excellence](https://www.iana.org/about/excellence)<br>- [Archive](https://www.iana.org/archive)<br>- [Contact Us](https://www.iana.org/contact) |\\n\\nThe IANA functions coordinate the Internet’s globally unique identifiers, and\\nare provided by [Public Technical Identifiers](https://pti.icann.org/), an affiliate of\\n[ICANN](http://www.icann.org/).\\n\\n- [Privacy Policy](https://www.icann.org/privacy/policy)\\n- [Terms of Service](https://www.icann.org/privacy/tos)\",\"metadata\":{\"title\":\"Example Domains\",\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"57dc250b-06d5-4a4a-bef7-bd9172e0fb51\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:45:40.970Z\",\"creditsUsed\":1},\"html\":\"<!DOCTYPE html><html>\\n\\n<body>\\n\\n\\n<header>\\n    <div id=\\\"header\\\">\\n        <div id=\\\"logo\\\">\\n            <a href=\\\"https://www.iana.org/\\\"><img src=\\\"https://www.iana.org/_img/2025.01/iana-logo-header.svg\\\" alt=\\\"Homepage\\\"></a>\\n        </div>\\n        <div class=\\\"navigation\\\">\\n            <ul>\\n                <li><a href=\\\"https://www.iana.org/domains\\\">Domains</a></li>\\n                <li><a href=\\\"https://www.iana.org/protocols\\\">Protocols</a></li>\\n                <li><a href=\\\"https://www.iana.org/numbers\\\">Numbers</a></li>\\n                <li><a href=\\\"https://www.iana.org/about\\\">About</a></li>\\n            </ul>\\n        </div>\\n    </div>\\n    \\n    \\n</header>\\n\\n\\n<div id=\\\"body\\\">\\n\\n\\n<article class=\\\"hemmed sidenav\\\">\\n\\n    <main>\\n    \\n<div class=\\\"help-article\\\">\\n\\n<h1>Example Domains</h1>\\n<p>As described in <a href=\\\"https://www.iana.org/go/rfc2606\\\">RFC 2606</a> and <a href=\\\"https://www.iana.org/go/rfc6761\\\">RFC 6761</a>, a\\nnumber of domains such as example.com and example.org are maintained\\nfor documentation purposes. These domains may be used as illustrative\\nexamples in documents without prior coordination with us. They are not\\navailable for registration or transfer.</p>\\n<p>We provide a web service on the example domain hosts to provide basic\\ninformation on the purpose of the domain. These web services are\\nprovided as best effort, but are not designed to support production\\napplications. While incidental traffic for incorrectly configured\\napplications is expected, please do not design applications that require\\nthe example domains to have operating HTTP service.</p>\\n<h2>Further Reading</h2>\\n<ul>\\n<li><a href=\\\"https://www.iana.org/domains/reserved\\\">IANA-managed Reserved Domains</a></li>\\n</ul>\\n\\n<div class=\\\"last-updated\\\">Last revised 2017-05-13.</div>\\n\\n\\n</div>\\n\\n    </main>\\n\\n    <nav id=\\\"sidenav\\\">\\n    \\n    </nav>\\n\\n</article>\\n\\n\\n</div>\\n\\n<footer>\\n    <div id=\\\"footer\\\">\\n        <table class=\\\"navigation\\\">\\n            <tbody><tr>\\n                <td class=\\\"section\\\"><a href=\\\"https://www.iana.org/domains\\\">Domain&nbsp;Names</a></td>\\n                <td class=\\\"subsection\\\">\\n                    <ul>\\n                        <li><a href=\\\"https://www.iana.org/domains/root\\\">Root Zone Registry</a></li>\\n                        <li><a href=\\\"https://www.iana.org/domains/int\\\">.INT Registry</a></li>\\n                        <li><a href=\\\"https://www.iana.org/domains/arpa\\\">.ARPA Registry</a></li>\\n                        <li><a href=\\\"https://www.iana.org/domains/idn-tables\\\">IDN Repository</a></li>\\n                    </ul>\\n                </td>\\n            </tr>\\n            <tr>\\n                <td class=\\\"section\\\"><a href=\\\"https://www.iana.org/numbers\\\">Number&nbsp;Resources</a></td>\\n                <td class=\\\"subsection\\\">\\n                    <ul>\\n                        <li><a href=\\\"https://www.iana.org/abuse\\\">Abuse Information</a></li>\\n                    </ul>\\n                </td>\\n            </tr>\\n            <tr>\\n                <td class=\\\"section\\\"><a href=\\\"https://www.iana.org/protocols\\\">Protocols</a></td>\\n                <td class=\\\"subsection\\\">\\n                    <ul>\\n                        <li><a href=\\\"https://www.iana.org/protocols\\\">Protocol Registries</a></li>\\n                        <li><a href=\\\"https://www.iana.org/time-zones\\\">Time Zone Database</a></li>\\n                    </ul>\\n                </td>\\n            </tr>\\n            <tr>\\n                <td class=\\\"section\\\"><a href=\\\"https://www.iana.org/about\\\">About&nbsp;Us</a></td>\\n                <td class=\\\"subsection\\\">\\n                    <ul>\\n                        <li><a href=\\\"https://www.iana.org/news\\\">News</a></li>\\n                        <li><a href=\\\"https://www.iana.org/performance\\\">Performance</a></li>\\n                        <li><a href=\\\"https://www.iana.org/about/excellence\\\">Excellence</a></li>\\n                        <li><a href=\\\"https://www.iana.org/archive\\\">Archive</a></li>\\n                        <li><a href=\\\"https://www.iana.org/contact\\\">Contact Us</a></li>\\n                    </ul>\\n                </td>\\n            </tr>\\n        </tbody></table>\\n        <div id=\\\"custodian\\\">\\n            <p>The IANA functions coordinate the Internet’s globally unique identifiers, and\\n                are provided by <a href=\\\"https://pti.icann.org/\\\">Public Technical Identifiers</a>, an affiliate of\\n                <a href=\\\"http://www.icann.org/\\\">ICANN</a>.</p>\\n        </div>\\n        <div id=\\\"legalnotice\\\">\\n            <ul>\\n                <li><a href=\\\"https://www.icann.org/privacy/policy\\\">Privacy Policy</a></li>\\n                <li><a href=\\\"https://www.icann.org/privacy/tos\\\">Terms of Service</a></li>\\n                \\n            </ul>\\n        </div>\\n    </div>\\n</footer>\\n\\n\\n\\n\\n\\n\\n\\n\\n</body></html>\"},{\"markdown\":\"# Example Domain\\n\\nThis domain is for use in illustrative examples in documents. You may use this\\ndomain in literature without prior coordination or asking for permission.\\n\\n[More information...](https://www.iana.org/domains/example)\",\"metadata\":{\"viewport\":\"width=device-width, initial-scale=1\",\"title\":\"Example Domain\",\"scrapeId\":\"78b1e0b6-0cfd-4ae3-9b92-477ebb950a35\",\"sourceURL\":\"https://example.com\",\"url\":\"https://example.com/\",\"statusCode\":200,\"contentType\":\"text/html\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:45:41.124Z\",\"creditsUsed\":1},\"html\":\"<!DOCTYPE html><html>\\n\\n<body>\\n<div>\\n    <h1>Example Domain</h1>\\n    <p>This domain is for use in illustrative examples in documents. You may use this\\n    domain in literature without prior coordination or asking for permission.</p>\\n    <p><a href=\\\"https://www.iana.org/domains/example\\\">More information...</a></p>\\n</div>\\n\\n\\n\\n</body></html>\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 15:45:42 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"formats\":[\"html\",\"markdown\"],\"onlyMainContent\":false,\"urls\":[\"https://www.iana.org/help/example-domains\",\"https://example.com\"]}"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "164"
+          ],
+          "etag": [
+            "W/\"a4-UX3nv+tNS7oD2Z4eVFk7iyekvq8\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 16:03:45 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"id\":\"444dba7e-8445-4d51-8f74-9478beb4b829\",\"url\":\"https://api.firecrawl.dev/v2/batch/scrape/444dba7e-8445-4d51-8f74-9478beb4b829\",\"invalidURLs\":[]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 16:03:45 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape/444dba7e-8445-4d51-8f74-9478beb4b829",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "8844"
+          ],
+          "etag": [
+            "W/\"228c-ks9W7YyHTqlKAtx5PiBc6xAZCks\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 16:03:46 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"status\":\"scraping\",\"completed\":1,\"total\":2,\"creditsUsed\":2,\"expiresAt\":\"2025-09-07T16:03:46.000Z\",\"data\":[{\"markdown\":\"[![Homepage](https://www.iana.org/_img/2025.01/iana-logo-header.svg)](https://www.iana.org/)\\n\\n- [Domains](https://www.iana.org/domains)\\n- [Protocols](https://www.iana.org/protocols)\\n- [Numbers](https://www.iana.org/numbers)\\n- [About](https://www.iana.org/about)\\n\\n# Example Domains\\n\\nAs described in [RFC 2606](https://www.iana.org/go/rfc2606) and [RFC 6761](https://www.iana.org/go/rfc6761), a\\nnumber of domains such as example.com and example.org are maintained\\nfor documentation purposes. These domains may be used as illustrative\\nexamples in documents without prior coordination with us. They are not\\navailable for registration or transfer.\\n\\nWe provide a web service on the example domain hosts to provide basic\\ninformation on the purpose of the domain. These web services are\\nprovided as best effort, but are not designed to support production\\napplications. While incidental traffic for incorrectly configured\\napplications is expected, please do not design applications that require\\nthe example domains to have operating HTTP service.\\n\\n## Further Reading\\n\\n- [IANA-managed Reserved Domains](https://www.iana.org/domains/reserved)\\n\\nLast revised 2017-05-13.\\n\\n|     |     |\\n| --- | --- |\\n| [Domain Names](https://www.iana.org/domains) | - [Root Zone Registry](https://www.iana.org/domains/root)<br>- [.INT Registry](https://www.iana.org/domains/int)<br>- [.ARPA Registry](https://www.iana.org/domains/arpa)<br>- [IDN Repository](https://www.iana.org/domains/idn-tables) |\\n| [Number Resources](https://www.iana.org/numbers) | - [Abuse Information](https://www.iana.org/abuse) |\\n| [Protocols](https://www.iana.org/protocols) | - [Protocol Registries](https://www.iana.org/protocols)<br>- [Time Zone Database](https://www.iana.org/time-zones) |\\n| [About Us](https://www.iana.org/about) | - [News](https://www.iana.org/news)<br>- [Performance](https://www.iana.org/performance)<br>- [Excellence](https://www.iana.org/about/excellence)<br>- [Archive](https://www.iana.org/archive)<br>- [Contact Us](https://www.iana.org/contact) |\\n\\nThe IANA functions coordinate the Internet’s globally unique identifiers, and\\nare provided by [Public Technical Identifiers](https://pti.icann.org/), an affiliate of\\n[ICANN](http://www.icann.org/).\\n\\n- [Privacy Policy](https://www.icann.org/privacy/policy)\\n- [Terms of Service](https://www.icann.org/privacy/tos)\",\"metadata\":{\"title\":\"Example Domains\",\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"21379c8a-00cc-4beb-9503-b8238b90bd08\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T16:03:45.047Z\",\"creditsUsed\":1},\"html\":\"<!DOCTYPE html><html>\\n\\n<body>\\n\\n\\n<header>\\n    <div id=\\\"header\\\">\\n        <div id=\\\"logo\\\">\\n            <a href=\\\"https://www.iana.org/\\\"><img src=\\\"https://www.iana.org/_img/2025.01/iana-logo-header.svg\\\" alt=\\\"Homepage\\\"></a>\\n        </div>\\n        <div class=\\\"navigation\\\">\\n            <ul>\\n                <li><a href=\\\"https://www.iana.org/domains\\\">Domains</a></li>\\n                <li><a href=\\\"https://www.iana.org/protocols\\\">Protocols</a></li>\\n                <li><a href=\\\"https://www.iana.org/numbers\\\">Numbers</a></li>\\n                <li><a href=\\\"https://www.iana.org/about\\\">About</a></li>\\n            </ul>\\n        </div>\\n    </div>\\n    \\n    \\n</header>\\n\\n\\n<div id=\\\"body\\\">\\n\\n\\n<article class=\\\"hemmed sidenav\\\">\\n\\n    <main>\\n    \\n<div class=\\\"help-article\\\">\\n\\n<h1>Example Domains</h1>\\n<p>As described in <a href=\\\"https://www.iana.org/go/rfc2606\\\">RFC 2606</a> and <a href=\\\"https://www.iana.org/go/rfc6761\\\">RFC 6761</a>, a\\nnumber of domains such as example.com and example.org are maintained\\nfor documentation purposes. These domains may be used as illustrative\\nexamples in documents without prior coordination with us. They are not\\navailable for registration or transfer.</p>\\n<p>We provide a web service on the example domain hosts to provide basic\\ninformation on the purpose of the domain. These web services are\\nprovided as best effort, but are not designed to support production\\napplications. While incidental traffic for incorrectly configured\\napplications is expected, please do not design applications that require\\nthe example domains to have operating HTTP service.</p>\\n<h2>Further Reading</h2>\\n<ul>\\n<li><a href=\\\"https://www.iana.org/domains/reserved\\\">IANA-managed Reserved Domains</a></li>\\n</ul>\\n\\n<div class=\\\"last-updated\\\">Last revised 2017-05-13.</div>\\n\\n\\n</div>\\n\\n    </main>\\n\\n    <nav id=\\\"sidenav\\\">\\n    \\n    </nav>\\n\\n</article>\\n\\n\\n</div>\\n\\n<footer>\\n    <div id=\\\"footer\\\">\\n        <table class=\\\"navigation\\\">\\n            <tbody><tr>\\n                <td class=\\\"section\\\"><a href=\\\"https://www.iana.org/domains\\\">Domain&nbsp;Names</a></td>\\n                <td class=\\\"subsection\\\">\\n                    <ul>\\n                        <li><a href=\\\"https://www.iana.org/domains/root\\\">Root Zone Registry</a></li>\\n                        <li><a href=\\\"https://www.iana.org/domains/int\\\">.INT Registry</a></li>\\n                        <li><a href=\\\"https://www.iana.org/domains/arpa\\\">.ARPA Registry</a></li>\\n                        <li><a href=\\\"https://www.iana.org/domains/idn-tables\\\">IDN Repository</a></li>\\n                    </ul>\\n                </td>\\n            </tr>\\n            <tr>\\n                <td class=\\\"section\\\"><a href=\\\"https://www.iana.org/numbers\\\">Number&nbsp;Resources</a></td>\\n                <td class=\\\"subsection\\\">\\n                    <ul>\\n                        <li><a href=\\\"https://www.iana.org/abuse\\\">Abuse Information</a></li>\\n                    </ul>\\n                </td>\\n            </tr>\\n            <tr>\\n                <td class=\\\"section\\\"><a href=\\\"https://www.iana.org/protocols\\\">Protocols</a></td>\\n                <td class=\\\"subsection\\\">\\n                    <ul>\\n                        <li><a href=\\\"https://www.iana.org/protocols\\\">Protocol Registries</a></li>\\n                        <li><a href=\\\"https://www.iana.org/time-zones\\\">Time Zone Database</a></li>\\n                    </ul>\\n                </td>\\n            </tr>\\n            <tr>\\n                <td class=\\\"section\\\"><a href=\\\"https://www.iana.org/about\\\">About&nbsp;Us</a></td>\\n                <td class=\\\"subsection\\\">\\n                    <ul>\\n                        <li><a href=\\\"https://www.iana.org/news\\\">News</a></li>\\n                        <li><a href=\\\"https://www.iana.org/performance\\\">Performance</a></li>\\n                        <li><a href=\\\"https://www.iana.org/about/excellence\\\">Excellence</a></li>\\n                        <li><a href=\\\"https://www.iana.org/archive\\\">Archive</a></li>\\n                        <li><a href=\\\"https://www.iana.org/contact\\\">Contact Us</a></li>\\n                    </ul>\\n                </td>\\n            </tr>\\n        </tbody></table>\\n        <div id=\\\"custodian\\\">\\n            <p>The IANA functions coordinate the Internet’s globally unique identifiers, and\\n                are provided by <a href=\\\"https://pti.icann.org/\\\">Public Technical Identifiers</a>, an affiliate of\\n                <a href=\\\"http://www.icann.org/\\\">ICANN</a>.</p>\\n        </div>\\n        <div id=\\\"legalnotice\\\">\\n            <ul>\\n                <li><a href=\\\"https://www.icann.org/privacy/policy\\\">Privacy Policy</a></li>\\n                <li><a href=\\\"https://www.icann.org/privacy/tos\\\">Terms of Service</a></li>\\n                \\n            </ul>\\n        </div>\\n    </div>\\n</footer>\\n\\n\\n\\n\\n\\n\\n\\n\\n</body></html>\"},{\"markdown\":\"# Example Domain\\n\\nThis domain is for use in illustrative examples in documents. You may use this\\ndomain in literature without prior coordination or asking for permission.\\n\\n[More information...](https://www.iana.org/domains/example)\",\"metadata\":{\"title\":\"Example Domain\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"c321ad17-3efd-4c3b-ba4f-50bf96e0a52d\",\"sourceURL\":\"https://example.com\",\"url\":\"https://example.com/\",\"statusCode\":200,\"contentType\":\"text/html\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T16:03:45.092Z\",\"creditsUsed\":1},\"html\":\"<!DOCTYPE html><html>\\n\\n<body>\\n<div>\\n    <h1>Example Domain</h1>\\n    <p>This domain is for use in illustrative examples in documents. You may use this\\n    domain in literature without prior coordination or asking for permission.</p>\\n    <p><a href=\\\"https://www.iana.org/domains/example\\\">More information...</a></p>\\n</div>\\n\\n\\n\\n</body></html>\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 16:03:46 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.3.1"
+}

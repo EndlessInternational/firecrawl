@@ -3,14 +3,14 @@
     {
       "request": {
         "method": "post",
-        "uri": "https://api.firecrawl.dev/v1/scrape",
+        "uri": "https://api.firecrawl.dev/v2/scrape",
         "body": {
           "encoding": "UTF-8",
           "string": "{\"formats\":[\"screenshot\"],\"url\":\"https://www.iana.org/help/example-domains\"}"
         },
         "headers": {
           "User-Agent": [
-            "Faraday v2.12.0"
+            "Faraday v2.13.4"
           ],
           "Authorization": [
             "Bearer <TOKEN>"
@@ -36,13 +36,13 @@
             "application/json; charset=utf-8"
           ],
           "content-length": [
-            "387"
+            "1065"
           ],
           "etag": [
-            "W/\"183-ylEB+1EXkBk+cpM//jCbgFEArI4\""
+            "W/\"429-ZBUS+zS8qWSIAOQXHtX8lSZ2vJg\""
           ],
           "date": [
-            "Fri, 08 Nov 2024 04:33:37 GMT"
+            "Sat, 06 Sep 2025 15:46:07 GMT"
           ],
           "via": [
             "1.1 google"
@@ -53,10 +53,10 @@
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"success\":true,\"data\":{\"screenshot\":\"https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-6f4088b9-f368-4aa8-90d0-8a3e04fbbe6a.png\",\"metadata\":{\"title\":\"Example Domains\",\"ogLocaleAlternate\":[],\"viewport\":\"width=device-width, initial-scale=1\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200}}}"
+          "string": "{\"success\":true,\"data\":{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-9a9dff08-1f35-473a-a0fb-2eab58eefb4f.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1757701460&Signature=ZXC%2FmxsDXaoALlxF8XqhdWonYcArCadowIikiBnzkgegrGHAg5SiKCq5DbV0mEHeDg9pvf241xU50LIYr0mbff%2BCHT%2BS8RBc%2B1I5uocCZfV4yFOvddxuhYEXFrUi5yhyIo3UiZ37BI5VZN4W1s4ANFFUTUnzi65r2lcWnDvSvBSCioBnWAcfT77IAjuZSaPhxECoDxAZI0LGtA9KySKLGV6Tz9Aucx4ZLedEEXFicURRBGbJ6qrJNg4%2FeXS%2BpuZwy0N89%2B3IU8AdvO5JWvX6yXPpjwc%2FlP9B3CbxZZ4vM7mIAyyGWBmaqFtnwTA2dtYKTe3zpESJLzGxrhJkvr1aWw%3D%3D\",\"metadata\":{\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"viewport\":\"width=device-width, initial-scale=1\",\"title\":\"Example Domains\",\"scrapeId\":\"1a36fce4-01d7-4220-99ec-7c79b3e3c39f\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:45:52.957Z\",\"creditsUsed\":1}}}"
         }
       },
-      "recorded_at": "Fri, 08 Nov 2024 04:33:36 GMT"
+      "recorded_at": "Sat, 06 Sep 2025 15:46:07 GMT"
     }
   ],
   "recorded_with": "VCR 6.3.1"

@@ -12,6 +12,8 @@ if response.success?
     puts 'Title: ' + ( result.metadata[ 'title' ] || '' )
     puts 'Screenshot: ' + result.screenshot_url
     puts '---'
+    puts result.metadata.to_h
+    puts '---'
     puts result.markdown
   else  
     puts "The url '#{url}' could not be scraped."

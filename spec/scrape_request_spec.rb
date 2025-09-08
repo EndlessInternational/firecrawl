@@ -38,7 +38,6 @@ RSpec.describe Firecrawl::ScrapeRequest do
       expect( result.links ).to eq( [] )
       expect( result.screenshot_url ).to be_nil
       expect( result.actions ).to eq( {} )
-      expect( result.llm_extraction ).to eq( {} )
       expect( result.warning ).to be_nil
     end 
   end
@@ -71,7 +70,6 @@ RSpec.describe Firecrawl::ScrapeRequest do
       expect( result.links ).to eq( [] )
       expect( result.screenshot_url ).to be_nil
       expect( result.actions ).to eq( {} )
-      expect( result.llm_extraction ).to eq( {} )
       expect( result.warning ).to be_nil
     end 
   end
@@ -105,7 +103,6 @@ RSpec.describe Firecrawl::ScrapeRequest do
       expect( result.links ).to eq( [] )
       expect( result.screenshot_url ).to be_nil
       expect( result.actions ).to eq( {} )
-      expect( result.llm_extraction ).to eq( {} )
       expect( result.warning ).to be_nil
     end 
   end
@@ -115,7 +112,7 @@ RSpec.describe Firecrawl::ScrapeRequest do
 
       let ( :options ) {
         Firecrawl::ScrapeOptions.build do 
-          format :html
+          formats :html
           only_main_content false 
         end 
       }
@@ -140,7 +137,6 @@ RSpec.describe Firecrawl::ScrapeRequest do
         expect( result.links ).to eq( [] )
         expect( result.screenshot_url ).to be_nil
         expect( result.actions ).to eq( {} )
-        expect( result.llm_extraction ).to eq( {} )
         expect( result.warning ).to be_nil
       end 
     end
@@ -174,7 +170,6 @@ RSpec.describe Firecrawl::ScrapeRequest do
         expect( result.links ).to eq( [] )
         expect( result.screenshot_url ).to be_nil
         expect( result.actions ).to eq( {} )
-        expect( result.llm_extraction ).to eq( {} )
         expect( result.warning ).to be_nil
       end 
     end
@@ -214,7 +209,6 @@ RSpec.describe Firecrawl::ScrapeRequest do
         expect( result.links ).to eq( [] )
         expect( result.screenshot_url ).to be_nil
         expect( result.actions ).to eq( {} )
-        expect( result.llm_extraction ).to eq( {} )
         expect( result.warning ).to be_nil
       end 
     end
@@ -251,7 +245,6 @@ RSpec.describe Firecrawl::ScrapeRequest do
         expect( result.links ).to eq( [] )
         expect( result.screenshot_url ).to be_nil
         expect( result.actions ).to eq( {} )
-        expect( result.llm_extraction ).to eq( {} )
         expect( result.warning ).to be_nil
       end 
     end
@@ -262,7 +255,7 @@ RSpec.describe Firecrawl::ScrapeRequest do
 
     let ( :options ) {
       Firecrawl::ScrapeOptions.build do 
-        format :screenshot
+        formats :screenshot
       end 
     }
 
@@ -284,17 +277,16 @@ RSpec.describe Firecrawl::ScrapeRequest do
       expect( result.links ).to eq( [] )
       # expect( result.screenshot_url ).to be_nil
       expect( result.actions ).to eq( {} )
-      expect( result.llm_extraction ).to eq( {} )
       expect( result.warning ).to be_nil
     end
 
   end
 
-  context "where the scrape options include 'format 'screenshot@full_page'" do 
+  context "where the scrape options include a screenshot option" do 
 
     let ( :options ) {
       Firecrawl::ScrapeOptions.build do 
-        format 'screenshot@full_page'
+        screenshot { full_page true }
       end 
     }
 
@@ -316,7 +308,6 @@ RSpec.describe Firecrawl::ScrapeRequest do
       expect( result.links ).to eq( [] )
       # expect( result.screenshot_url ).to be_nil
       expect( result.actions ).to eq( {} )
-      expect( result.llm_extraction ).to eq( {} )
       expect( result.warning ).to be_nil
     end
 
@@ -356,7 +347,6 @@ RSpec.describe Firecrawl::ScrapeRequest do
         expect( result.links ).to eq( [] )
         # expect( result.screenshot_url ).to be_nil
         expect( result.actions ).to eq( {} )
-        expect( result.llm_extraction ).to eq( {} )
         expect( result.warning ).to be_nil
       end 
     end
@@ -394,11 +384,9 @@ RSpec.describe Firecrawl::ScrapeRequest do
         expect( result.links ).to eq( [] )
         # expect( result.screenshot_url ).to be_nil
         expect( result.actions ).to eq( {} )
-        expect( result.llm_extraction ).to eq( {} )
         expect( result.warning ).to be_nil
       end 
     end
 
   end
 end 
-

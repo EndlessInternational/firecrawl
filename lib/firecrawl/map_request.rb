@@ -45,8 +45,7 @@ module Firecrawl
       result = nil 
       if response.success?  
         attributes = ( JSON.parse( response.body, symbolize_names: true ) rescue nil )
-        attributes ||= { success: false }
-        result = MapResult.new( attributes[ :success ], attributes )
+        result = MapResult.new( attributes )
       else 
         result = ErrorResult.new( response.status, attributes ) 
       end

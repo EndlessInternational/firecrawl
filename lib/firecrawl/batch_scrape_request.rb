@@ -54,7 +54,7 @@ module Firecrawl
     def submit( urls, options = nil, &block )        
       if options
         options = options.is_a?( ScrapeOptions ) ? options : ScrapeOptions.build( options.to_h ) 
-        options = options.to_h
+        options = ScrapeOptions.normalize_options( options.to_h )
       else 
         options = {}
       end
@@ -63,8 +63,7 @@ module Firecrawl
       result = nil 
       attributes = JSON.parse( response.body, symbolize_names: true ) rescue nil
       if response.success?
-        attributes ||= { success: false, status: :failed  }
-        result = BatchScrapeResult.new( attributes[ :success ], attributes )
+        result = BatchScrapeResult.new( attributes )
       else 
         result = ErrorResult.new( response.status, attributes || {} )
       end
@@ -95,7 +94,7 @@ module Firecrawl
       attributes = JSON.parse( response.body, symbolize_names: true ) rescue nil
       if response.success? 
         attributes ||= { success: false, status: :failed  }
-        result = batch_result.merge( attributes  )
+        result = batch_result.merge_attributes( attributes  )
       else 
         result = ErrorResult.new( response.status, attributes || {} )
       end 
@@ -131,7 +130,7 @@ module Firecrawl
         # the next url should not be set by this method so that retrieve and retrieve_all do 
         # not impact each other 
         attributes.delete( :next )
-        result = batch_result.merge( attributes  )
+        result = batch_result.merge_attributes( attributes  )
       else 
         result = ErrorResult.new( response.status, attributes || {} )
       end 

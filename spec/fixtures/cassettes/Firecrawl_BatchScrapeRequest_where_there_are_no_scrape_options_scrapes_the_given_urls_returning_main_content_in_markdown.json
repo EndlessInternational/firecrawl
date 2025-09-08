@@ -1,0 +1,179 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape/0e5786a5-f4c2-47a3-926d-32d70accf79a",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "2092"
+          ],
+          "etag": [
+            "W/\"82c-bwVA/rm+UHuPksdLMGIH974Eye8\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 15:45:40 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"status\":\"scraping\",\"completed\":0,\"total\":2,\"creditsUsed\":2,\"expiresAt\":\"2025-09-07T15:45:40.000Z\",\"data\":[{\"markdown\":\"# Example Domains\\n\\nAs described in [RFC 2606](https://www.iana.org/go/rfc2606) and [RFC 6761](https://www.iana.org/go/rfc6761), a\\nnumber of domains such as example.com and example.org are maintained\\nfor documentation purposes. These domains may be used as illustrative\\nexamples in documents without prior coordination with us. They are not\\navailable for registration or transfer.\\n\\nWe provide a web service on the example domain hosts to provide basic\\ninformation on the purpose of the domain. These web services are\\nprovided as best effort, but are not designed to support production\\napplications. While incidental traffic for incorrectly configured\\napplications is expected, please do not design applications that require\\nthe example domains to have operating HTTP service.\\n\\n## Further Reading\\n\\n- [IANA-managed Reserved Domains](https://www.iana.org/domains/reserved)\\n\\nLast revised 2017-05-13.\",\"metadata\":{\"viewport\":\"width=device-width, initial-scale=1\",\"title\":\"Example Domains\",\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"scrapeId\":\"fcbb2446-0a0a-4c43-8100-381c7f5bf789\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:44:40.900Z\",\"creditsUsed\":1}},{\"markdown\":\"# Example Domain\\n\\nThis domain is for use in illustrative examples in documents. You may use this\\ndomain in literature without prior coordination or asking for permission.\\n\\n[More information...](https://www.iana.org/domains/example)\",\"metadata\":{\"title\":\"Example Domain\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"8843572b-e2bb-4bd7-a739-754e32e3e7a6\",\"sourceURL\":\"https://example.com\",\"url\":\"https://example.com/\",\"statusCode\":200,\"contentType\":\"text/html\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T15:45:26.180Z\",\"creditsUsed\":1}}]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 15:45:40 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"urls\":[\"https://www.iana.org/help/example-domains\",\"https://example.com\"]}"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "164"
+          ],
+          "etag": [
+            "W/\"a4-FttQOiRvOmJoUCcuZsIq/A5ZAP4\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 16:03:43 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"id\":\"1a6fa8f2-eba3-440a-85b1-bb8cbdf7cbe2\",\"url\":\"https://api.firecrawl.dev/v2/batch/scrape/1a6fa8f2-eba3-440a-85b1-bb8cbdf7cbe2\",\"invalidURLs\":[]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 16:03:43 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.firecrawl.dev/v2/batch/scrape/1a6fa8f2-eba3-440a-85b1-bb8cbdf7cbe2",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "x-powered-by": [
+            "Express"
+          ],
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "content-length": [
+            "2092"
+          ],
+          "etag": [
+            "W/\"82c-JkgM2y1pJUBv57w5LsACvtjH8cg\""
+          ],
+          "date": [
+            "Sat, 06 Sep 2025 16:03:44 GMT"
+          ],
+          "via": [
+            "1.1 google"
+          ],
+          "alt-svc": [
+            "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"status\":\"scraping\",\"completed\":0,\"total\":2,\"creditsUsed\":2,\"expiresAt\":\"2025-09-07T16:03:44.000Z\",\"data\":[{\"markdown\":\"# Example Domains\\n\\nAs described in [RFC 2606](https://www.iana.org/go/rfc2606) and [RFC 6761](https://www.iana.org/go/rfc6761), a\\nnumber of domains such as example.com and example.org are maintained\\nfor documentation purposes. These domains may be used as illustrative\\nexamples in documents without prior coordination with us. They are not\\navailable for registration or transfer.\\n\\nWe provide a web service on the example domain hosts to provide basic\\ninformation on the purpose of the domain. These web services are\\nprovided as best effort, but are not designed to support production\\napplications. While incidental traffic for incorrectly configured\\napplications is expected, please do not design applications that require\\nthe example domains to have operating HTTP service.\\n\\n## Further Reading\\n\\n- [IANA-managed Reserved Domains](https://www.iana.org/domains/reserved)\\n\\nLast revised 2017-05-13.\",\"metadata\":{\"viewport\":\"width=device-width, initial-scale=1\",\"title\":\"Example Domains\",\"favicon\":\"https://www.iana.org/_img/bookmark_icon.ico\",\"scrapeId\":\"0b383358-d2be-4261-b66e-4804a631477d\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T16:03:36.923Z\",\"creditsUsed\":1}},{\"markdown\":\"# Example Domain\\n\\nThis domain is for use in illustrative examples in documents. You may use this\\ndomain in literature without prior coordination or asking for permission.\\n\\n[More information...](https://www.iana.org/domains/example)\",\"metadata\":{\"title\":\"Example Domain\",\"viewport\":\"width=device-width, initial-scale=1\",\"scrapeId\":\"b003904f-322c-4b6f-ada9-0a50f00e5ab8\",\"sourceURL\":\"https://example.com\",\"url\":\"https://example.com/\",\"statusCode\":200,\"contentType\":\"text/html\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2025-09-06T16:03:36.881Z\",\"creditsUsed\":1}}]}"
+        }
+      },
+      "recorded_at": "Sat, 06 Sep 2025 16:03:44 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.3.1"
+}

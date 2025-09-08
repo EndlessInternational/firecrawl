@@ -16,6 +16,7 @@ require_relative 'firecrawl/scrape_options'
 require_relative 'firecrawl/scrape_result'
 require_relative 'firecrawl/scrape_request'
 require_relative 'firecrawl/batch_scrape_result'
+require_relative 'firecrawl/batch_scrape_options'
 require_relative 'firecrawl/batch_scrape_request'
 require_relative 'firecrawl/map_options'
 require_relative 'firecrawl/map_result'
@@ -29,5 +30,4 @@ require_relative 'firecrawl/module_methods'
 module Firecrawl
   extend ModuleMethods
 end
-
 

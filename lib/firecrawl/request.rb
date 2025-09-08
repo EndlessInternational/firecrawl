@@ -28,7 +28,7 @@ module Firecrawl
   # 
   class Request 
 
-    BASE_URI = 'https://api.firecrawl.dev/v1'
+    BASE_URI = 'https://api.firecrawl.dev/v2'
 
     ##
     # The +initialize+ method initializes the +Request+ instance. You MUST pass an +api_key+ and

@@ -36,8 +36,8 @@ module Firecrawl
     #
     def submit( url, options = nil, &block )    
       if options
-        options = options.is_a?( ScrapeOptions ) ? options : ScrapeOptions.build( options.to_h ) 
-        options = options.to_h
+        options = options.is_a?( ScrapeOptions ) ? options : ScrapeOptions.build!( options.to_h ) 
+        options = ScrapeOptions.normalize_options( options.to_h )
       else 
         options = {}
       end
@@ -47,14 +47,15 @@ module Firecrawl
       result = nil 
       if response.success?  
         attributes = ( JSON.parse( response.body, symbolize_names: true ) rescue nil )
-        attributes ||= { success: false }
-        result = ScrapeResult.new( attributes[ :success ], attributes[ :data ] )
+        result = ScrapeResult.new( attributes )
       else 
         result = ErrorResult.new( response.status, attributes )
       end
       
       ResponseMethods.install( response, result )     
     end 
+
+  private 
 
   end 
 end
