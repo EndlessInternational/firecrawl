@@ -1,9 +1,9 @@
 module Firecrawl
   module ModuleMethods
-    DEFAULT_CONNECTION = Faraday.new { | builder | builder.adapter Faraday.default_adapter }
-    
+
     def connection( connection = nil )
-      @connection = connection || @connection || DEFAULT_CONNECTION    
+      @connection = connection if connection
+      @connection ||= Faraday.new { | builder | builder.adapter Faraday.default_adapter }
     end
 
     def api_key( api_key = nil )
