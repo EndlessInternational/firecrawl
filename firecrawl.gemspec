@@ -33,7 +33,7 @@ Gem::Specification.new do | spec |
   spec.add_runtime_dependency 'faraday', '~> 2'
   spec.add_runtime_dependency 'dynamicschema', '~> 2'
 
-  spec.add_development_dependency 'rspec', '~> 3.13'
+  spec.add_development_dependency 'minitest', '~> 5.25'
   spec.add_development_dependency 'debug', '~> 1.9'
   spec.add_development_dependency 'vcr', '~> 6.3'
 

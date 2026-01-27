@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+# Parse our options before bundler/minitest load
+vcr_mode = 'on'
+test_files = []
+
+args = ARGV.dup
+ARGV.clear
+
+while ( arg = args.shift )
+  case arg
+  when '--vcr'
+    vcr_mode = args.shift || 'on'
+  when /^-/
+    ARGV << arg
+  else
+    test_files << arg
+  end
+end
+
+# Default to verbose
+ARGV << '--verbose' unless ARGV.include?( '-v' ) || ARGV.include?( '--verbose' )
+
+ENV[ 'VCR' ] = vcr_mode
+
+require 'bundler/setup'
+
+test_files = Dir[ 'test/**/*_test.rb' ] if test_files.empty?
+test_files.each { |f| require_relative "../#{f}" }
