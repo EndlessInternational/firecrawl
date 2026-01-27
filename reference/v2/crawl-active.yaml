@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info: { title: Firecrawl API, version: v2 }
+servers: [{ url: https://api.firecrawl.dev/v2 }]
+security: [{ bearerAuth: [] }]
+paths:
+  /crawl/active:
+    get:
+      tags: [Crawling]
+      summary: List all active crawls for the authenticated team
+      operationId: getActiveCrawls
+      responses:
+        '200': { description: Active crawl list }
+        '402': { description: Payment required }
+        '429': { description: Too many requests }
+        '500': { description: Server error }
+components:
+  securitySchemes:
+    bearerAuth: { type: http, scheme: bearer }

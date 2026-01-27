@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info: { title: Firecrawl API, version: v2 }
+servers: [{ url: https://api.firecrawl.dev/v2 }]
+security: [{ bearerAuth: [] }]
+paths:
+  /crawl/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema: { type: string, format: uuid }
+    delete:
+      tags: [Crawling]
+      summary: Cancel a crawl job
+      operationId: cancelCrawl
+      responses:
+        '200': { description: Cancelled }
+        '402': { description: Payment required }
+        '429': { description: Too many requests }
+        '500': { description: Server error }
+components:
+  securitySchemes:
+    bearerAuth: { type: http, scheme: bearer }

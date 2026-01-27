@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info: { title: Firecrawl API, version: v2 }
+servers: [{ url: https://api.firecrawl.dev/v2 }]
+security: [{ bearerAuth: [] }]
+paths:
+  /map:
+    post:
+      tags: [Mapping]
+      summary: Discover URLs for a site
+      operationId: mapUrls
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [url]
+              properties:
+                url: { type: string, format: uri }
+                search: { type: string }
+                sitemap: { type: string, enum: [skip, include, only], default: include }
+                includeSubdomains: { type: boolean, default: true }
+                ignoreQueryParameters: { type: boolean, default: true }
+                ignoreCache: { type: boolean, default: false }
+                limit: { type: integer, default: 5000, maximum: 100000 }
+                timeout: { type: integer, description: Timeout in milliseconds }
+                location:
+                  type: object
+                  properties:
+                    country: { type: string, pattern: '^[A-Z]{2}$', default: US }
+                    languages:
+                      type: array
+                      items: { type: string }
+      responses:
+        '200': { description: List of discovered links }
+        '402': { description: Payment required }
+        '429': { description: Too many requests }
+        '500': { description: Server error }
+components:
+  securitySchemes:
+    bearerAuth: { type: http, scheme: bearer }

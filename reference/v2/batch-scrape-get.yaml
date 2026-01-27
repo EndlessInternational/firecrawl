@@ -1,0 +1,24 @@
+openapi: 3.0.0
+info: { title: Firecrawl API, version: v2 }
+servers: [{ url: https://api.firecrawl.dev/v2 }]
+security: [{ bearerAuth: [] }]
+paths:
+  /batch/scrape/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema: { type: string, format: uuid }
+        description: Batch scrape job id
+    get:
+      tags: [Scraping]
+      summary: Get the status (and results) of a batch scrape job
+      operationId: getBatchScrapeStatus
+      responses:
+        '200': { description: Batch scrape status and data }
+        '402': { description: Payment required }
+        '429': { description: Too many requests }
+        '500': { description: Server error }
+components:
+  securitySchemes:
+    bearerAuth: { type: http, scheme: bearer }
