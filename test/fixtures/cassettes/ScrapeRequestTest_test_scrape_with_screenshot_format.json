@@ -1,0 +1,57 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "post",
+        "uri": "https://api.firecrawl.dev/v2/scrape",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"formats\":[\"screenshot\"],\"url\":\"https://www.iana.org/help/example-domains\"}"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-length": [
+            "1093"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "date": [
+            "Tue, 27 Jan 2026 23:14:10 GMT"
+          ],
+          "etag": [
+            "W/\"445-nm7Q7W1XGeEXh+zrEuWlTyH3tfk\""
+          ],
+          "x-response-time": [
+            "468.891ms"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"data\":{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-a7052435-e650-4563-9569-b7cef7f2737b.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1770160281&Signature=eS4W2zZw%2BGmoeiP7xWyXA9YI5VmnUXUUI51M8Zz1VyNB4mkRTM2pJTsvdRWvv5wcrK9Imgl4MombcSpSU%2B5aFR4tywDGHFDOeJ%2F6Z0rRZ5ZR1MTDdST0iYbNJGYf5Qt57ZIbHomXmxRNqmRoBHlPacJBZv4SDHWtjlUQyI3cuhdecekoxdvyer6heWRQEee4De4pNAm5uDg5SeJB7opfWtvIywPIXT7k3lZmTToMpFjaoUKn3Qq0Qbr9rRZLF69QB%2B%2F7maWgBDCUs75vvzZrqIoDENNbAkpu6lW7FpuBP18Pa1n35EB3G5Xk0QVJN3KbejEBy0l2I5hGBOoW0oUdKA%3D%3D\",\"metadata\":{\"title\":\"Example Domains\",\"viewport\":\"width=device-width, initial-scale=1\",\"favicon\":\"https://www.iana.org/static/_img/bookmark_icon.ico\",\"scrapeId\":\"019c01bc-657e-74b2-8609-a536331711e2\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2026-01-27T23:11:21.847Z\",\"creditsUsed\":1,\"concurrencyLimited\":false}}}"
+        }
+      },
+      "recorded_at": "Tue, 27 Jan 2026 23:14:10 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.3.1"
+}

@@ -44,14 +44,14 @@ module Firecrawl
       options[ :url ] = url.to_s
 
       response = post( "#{BASE_URI}/scrape", options, &block )
-      result = nil 
-      if response.success?  
-        attributes = ( JSON.parse( response.body, symbolize_names: true ) rescue nil )
-        result = ScrapeResult.new( attributes )
-      else 
-        result = ErrorResult.new( response.status, attributes )
+      attributes = ( JSON.parse( response.body, symbolize_names: true ) rescue nil )
+
+      result = if response.success?
+        ScrapeResult.new( attributes )
+      else
+        ErrorResult.new( response.status, attributes )
       end
-      
+
       ResponseMethods.install( response, result )     
     end 
 

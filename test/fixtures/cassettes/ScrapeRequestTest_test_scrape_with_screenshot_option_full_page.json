@@ -1,0 +1,57 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "post",
+        "uri": "https://api.firecrawl.dev/v2/scrape",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"formats\":[{\"type\":\"screenshot\",\"fullPage\":true}],\"url\":\"https://www.iana.org/help/example-domains\"}"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-length": [
+            "1109"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "date": [
+            "Tue, 27 Jan 2026 23:14:14 GMT"
+          ],
+          "etag": [
+            "W/\"455-kK+A+GPCvnDGT3q6KVwxApoBxrU\""
+          ],
+          "x-response-time": [
+            "413.940ms"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"data\":{\"screenshot\":\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-1b40b61b-a7c8-4f4c-b62a-2bd99cf46b91.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1770160283&Signature=VHgw%2FETd%2BPPSnAh%2FSbQSt55L61mNd9nGWYMS6X%2B1e3LsH7kOeImHIgYQQw6xZ5PcOPsdf4G5F10d%2F%2FtSIMMDEZxrwdblWBjxJuiHXZudnhSOF9YQQvBcKHaNcjmpAjQJbitY7MPDu%2F6dR6875RoH6wOmSg8Af2GjQFKWd2Qcu4EAz5KygLw%2BVT%2FLW%2Bx3kxqIRRF5tXmWpMFP62zrHTzzTfN4rmBXy26Dov7pol0P6eyA9Wzy1KdyP4WtSfrdUjOyrQXQA4QsumCJ%2F3GBwMLepGLkV24M%2B6S%2B9mH1rZg8HF62xpIEEPjiNelsZSTtkLEaNHxJ8w2lH4bJFvik1w0kEw%3D%3D\",\"metadata\":{\"viewport\":\"width=device-width, initial-scale=1\",\"title\":\"Example Domains\",\"favicon\":\"https://www.iana.org/static/_img/bookmark_icon.ico\",\"scrapeId\":\"019c01bc-777e-705a-af9f-b24e5ff7b017\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2026-01-27T23:11:24.390Z\",\"creditsUsed\":1,\"concurrencyLimited\":false}}}"
+        }
+      },
+      "recorded_at": "Tue, 27 Jan 2026 23:14:14 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.3.1"
+}

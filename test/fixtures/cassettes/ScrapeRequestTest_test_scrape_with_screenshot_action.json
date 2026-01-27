@@ -1,0 +1,57 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "post",
+        "uri": "https://api.firecrawl.dev/v2/scrape",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"formats\":[\"markdown\"],\"actions\":[{\"type\":\"wait\",\"milliseconds\":500},{\"type\":\"screenshot\",\"fullPage\":true}],\"url\":\"https://www.iana.org/help/example-domains\"}"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-length": [
+            "2068"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "date": [
+            "Tue, 27 Jan 2026 23:14:06 GMT"
+          ],
+          "etag": [
+            "W/\"814-dNBkc48b8m/Dlf3p0Z2LY1zgxjQ\""
+          ],
+          "x-response-time": [
+            "1901.039ms"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"data\":{\"markdown\":\"# Example Domains\\n\\nAs described in [RFC 2606](https://www.iana.org/go/rfc2606) and [RFC 6761](https://www.iana.org/go/rfc6761), a\\nnumber of domains such as example.com and example.org are maintained\\nfor documentation purposes. These domains may be used as illustrative\\nexamples in documents without prior coordination with us. They are not\\navailable for registration or transfer.\\n\\nWe provide a web service on the example domain hosts to provide basic\\ninformation on the purpose of the domain. These web services are\\nprovided as best effort, but are not designed to support production\\napplications. While incidental traffic for incorrectly configured\\napplications is expected, please do not design applications that require\\nthe example domains to have operating HTTP service.\\n\\n## Further Reading\\n\\n- [IANA-managed Reserved Domains](https://www.iana.org/domains/reserved)\\n\\nLast revised 2017-05-13.\",\"actions\":{\"screenshots\":[\"https://storage.googleapis.com/firecrawl-scrape-media/screenshot-17e726de-6aca-4896-9029-aa080fbae582.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1770160446&Signature=FuJvtuIRl91ZtIUnO0s6dbzPcR7zO0uKA%2BM1Fhhbx7MZ1F7JMQm28aAENfelo7xrtspn1WtgUrTyyIYZjw3DCW%2BIlFuGSqg9xwZbn%2FOv0x5Do2BGpj%2B4fq1IO0GhIP5awidQfaVABABaMEe%2F7wHOMqfmgiggBBW9IgshJZVtXtk2MHDqOLBQ97%2FF%2FVSjYEta6bnjfiDbJpC4JBBQEuBIlBOWbcz3UeNdXi%2FTqEy6Lzf6qNa%2F1uZZTzm%2Fief2zWA%2Bq1byyxPiljRtztBCzUqFr2f4Qvjq2NrOOM61uLIlHjm%2BBPWF7N1PZEXyQWgCNKWE39e2Otm8nlljgyn9b9mmAQ%3D%3D\"],\"scrapes\":[],\"javascriptReturns\":[],\"pdfs\":[]},\"metadata\":{\"viewport\":\"width=device-width, initial-scale=1\",\"title\":\"Example Domains\",\"favicon\":\"https://www.iana.org/static/_img/bookmark_icon.ico\",\"scrapeId\":\"019c01bc-51a4-77ad-8a23-0ae786d7ea83\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"timezone\":\"America/New_York\",\"proxyUsed\":\"basic\",\"creditsUsed\":1,\"concurrencyLimited\":false}}}"
+        }
+      },
+      "recorded_at": "Tue, 27 Jan 2026 23:14:06 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.3.1"
+}

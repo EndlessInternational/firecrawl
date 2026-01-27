@@ -1,0 +1,57 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "post",
+        "uri": "https://api.firecrawl.dev/v2/scrape",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"formats\":[\"html\"],\"onlyMainContent\":true,\"url\":\"https://www.iana.org/help/example-domains\"}"
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.13.4"
+          ],
+          "Authorization": [
+            "Bearer <TOKEN>"
+          ],
+          "Content-Type": [
+            "application/json"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "access-control-allow-origin": [
+            "*"
+          ],
+          "content-length": [
+            "1796"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ],
+          "date": [
+            "Tue, 27 Jan 2026 23:14:11 GMT"
+          ],
+          "etag": [
+            "W/\"704-OCDaI82hysNrJ2/SgooXczMoaF4\""
+          ],
+          "x-response-time": [
+            "326.587ms"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"success\":true,\"data\":{\"metadata\":{\"title\":\"Example Domains\",\"viewport\":\"width=device-width, initial-scale=1\",\"favicon\":\"https://www.iana.org/static/_img/bookmark_icon.ico\",\"scrapeId\":\"019c01bc-68b7-7379-8991-06142c4e40a3\",\"sourceURL\":\"https://www.iana.org/help/example-domains\",\"url\":\"https://www.iana.org/help/example-domains\",\"statusCode\":200,\"contentType\":\"text/html; charset=UTF-8\",\"proxyUsed\":\"basic\",\"cacheState\":\"hit\",\"cachedAt\":\"2026-01-27T23:11:24.390Z\",\"creditsUsed\":1,\"concurrencyLimited\":false},\"html\":\"<!DOCTYPE html><html>\\n\\n<body>\\n\\n\\n\\n\\n\\n\\n<div id=\\\"body\\\">\\n\\n\\n<article class=\\\"hemmed sidenav\\\">\\n\\n    <main>\\n    \\n<div class=\\\"help-article\\\">\\n\\n<h1>Example Domains</h1>\\n<p>As described in <a href=\\\"https://www.iana.org/go/rfc2606\\\">RFC 2606</a> and <a href=\\\"https://www.iana.org/go/rfc6761\\\">RFC 6761</a>, a\\nnumber of domains such as example.com and example.org are maintained\\nfor documentation purposes. These domains may be used as illustrative\\nexamples in documents without prior coordination with us. They are not\\navailable for registration or transfer.</p>\\n<p>We provide a web service on the example domain hosts to provide basic\\ninformation on the purpose of the domain. These web services are\\nprovided as best effort, but are not designed to support production\\napplications. While incidental traffic for incorrectly configured\\napplications is expected, please do not design applications that require\\nthe example domains to have operating HTTP service.</p>\\n<h2>Further Reading</h2>\\n<ul>\\n<li><a href=\\\"https://www.iana.org/domains/reserved\\\">IANA-managed Reserved Domains</a></li>\\n</ul>\\n\\n<div class=\\\"last-updated\\\">Last revised 2017-05-13.</div>\\n\\n\\n</div>\\n\\n    </main>\\n\\n    \\n\\n</article>\\n\\n\\n</div>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n</body></html>\"}}"
+        }
+      },
+      "recorded_at": "Tue, 27 Jan 2026 23:14:11 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.3.1"
+}
