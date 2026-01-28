@@ -11,11 +11,15 @@ class MapRequestTest < Minitest::Test
     @map_request ||= Firecrawl::MapRequest.new( api_key: ENV[ 'FIRECRAWL_API_KEY' ] )
   end
 
-  # no options
+  # minimal options
 
-  def test_map_with_no_options_returns_links
+  def test_map_with_minimal_options_returns_links
     vcr_cassette do
-      response = map_request.submit( @url )
+      options = Firecrawl::MapOptions.build do
+        limit 20
+      end
+
+      response = map_request.submit( @url, options )
 
       assert_kind_of Faraday::Response, response
       assert_successful_response response

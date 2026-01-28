@@ -11,11 +11,15 @@ class CrawlRequestTest < Minitest::Test
     @crawl_request ||= Firecrawl::CrawlRequest.new( api_key: ENV[ 'FIRECRAWL_API_KEY' ] )
   end
 
-  # submit with no options
+  # submit with minimal options
 
-  def test_crawl_submit_with_no_options_returns_crawl_result
+  def test_crawl_submit_with_minimal_options_returns_crawl_result
     vcr_cassette do
-      response = crawl_request.submit( @url )
+      options = Firecrawl::CrawlOptions.build do
+        limit 3
+      end
+
+      response = crawl_request.submit( @url, options )
 
       assert_kind_of Faraday::Response, response
       assert_successful_response response
@@ -156,7 +160,11 @@ class CrawlRequestTest < Minitest::Test
 
   def test_crawl_status_helpers
     vcr_cassette do
-      response = crawl_request.submit( @url )
+      options = Firecrawl::CrawlOptions.build do
+        limit 3
+      end
+
+      response = crawl_request.submit( @url, options )
       assert_successful_response response
 
       result = response.result
