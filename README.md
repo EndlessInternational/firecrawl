@@ -26,6 +26,7 @@ end
   - [Batch Scrape](#batch-scrape)
   - [Map](#map)
   - [Crawl](#crawl)
+  - [Extract](#extract)
 - [Responses and Errors](#responses-and-errors)
 - [Connections](#connections)
 - [License](#license)
@@ -190,8 +191,40 @@ end
 ```
 
 For complete documentation of all crawl options and response fields, see [Crawl Documentation](readme/crawl.md).
+
+### Extract
+
+The extract endpoint uses LLM to pull structured data from URLs. Provide a prompt and/or JSON schema to define what data you want:
+
+```ruby
+request = Firecrawl::ExtractRequest.new( api_key: ENV[ 'FIRECRAWL_API_KEY' ] )
+
+options = Firecrawl::ExtractOptions.build do
+  prompt 'Extract the company name and description'
+  schema( {
+    type: 'object',
+    properties: {
+      name: { type: 'string' },
+      description: { type: 'string' }
+    }
+  } )
+end
+
+response = request.submit( 'https://example.com', options )
+
+while response.success?
+  result = response.result
+  break unless result.processing?
+  sleep 2
+  response = request.retrieve( result )
+end
+
+if result.completed?
+  puts result.data
 end
 ```
+
+For complete documentation of all extract options and response fields, see [Extract Documentation](readme/extract.md).
 
 ---
 

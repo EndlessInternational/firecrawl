@@ -24,6 +24,9 @@ require_relative 'firecrawl/map_request'
 require_relative 'firecrawl/crawl_options'
 require_relative 'firecrawl/crawl_result'
 require_relative 'firecrawl/crawl_request'
+require_relative 'firecrawl/extract_options'
+require_relative 'firecrawl/extract_result'
+require_relative 'firecrawl/extract_request'
 
 require_relative 'firecrawl/module_methods'
 
