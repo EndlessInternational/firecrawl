@@ -158,6 +158,8 @@ if response.success?
 end
 ```
 
+For complete documentation of all map options and response fields, see [Map Documentation](readme/map.md).
+
 ### Crawl
 
 The crawl endpoint recursively scrapes an entire website. Like batch scrape, it returns results asynchronously:
