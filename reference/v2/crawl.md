@@ -18,18 +18,37 @@ Crawl creates an **asynchronous crawl job** starting from a base URL. Firecrawl 
 ## Request body
 
 ### Required
-- `url` (string, URL): the origin to crawl.
+- `url` (string, URL): the base URL to start crawling from.
 
-### Common crawl controls (high level)
+### Crawl scope
 - `prompt` (string): natural language prompt to generate crawl options (explicit fields override).
-- `includePaths` / `excludePaths` (string[]): regex patterns against the URL pathname.
-- `maxDiscoveryDepth` (integer): discovery depth limit.
-- `sitemap` (`include` | `skip` | `only`, default `include`).
-- `ignoreQueryParameters` (boolean): avoid re-scraping same path with different query params.
-- `limit` (integer, default ~10000): max pages.
+- `includePaths` / `excludePaths` (string[]): URL pathname regex patterns to include/exclude.
+- `maxDiscoveryDepth` (integer): maximum depth to crawl based on discovery order.
+- `sitemap` (`include` | `skip` | `only`, default `include`): sitemap mode when crawling.
+- `ignoreQueryParameters` (boolean, default `false`): do not re-scrape the same path with different query parameters.
+- `limit` (integer, default `10000`): maximum number of pages to crawl.
+
+### Domain and link following
+- `crawlEntireDomain` (boolean, default `false`): allows the crawler to follow internal links to siblings or parents.
+- `allowExternalLinks` (boolean, default `false`): allows the crawler to follow links to external websites.
+- `allowSubdomains` (boolean, default `false`): allows the crawler to follow links to subdomains of the main domain.
+
+### Rate limiting
+- `delay` (number): delay in seconds between scrapes.
+- `maxConcurrency` (integer): maximum number of concurrent scrapes.
+
+### Webhook
+- `webhook` (object): receive events as the job runs.
+  - `url` (string, required): the URL to send webhook events to.
+  - `headers` (object): custom headers to send with webhook requests.
+  - `metadata` (object): custom metadata included in webhook payloads.
+  - `events` (string[]): which events to send (`started`, `page`, `completed`, `failed`).
 
 ### Scraping controls
 - `scrapeOptions` (object): controls formats (markdown/html/etc), actions, proxy, headers, etc. (same model as `/scrape`).
+
+### Data retention
+- `zeroDataRetention` (boolean, default `false`): enables zero data retention for this crawl.
 
 ## Response
 
