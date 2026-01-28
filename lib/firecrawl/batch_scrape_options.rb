@@ -1,66 +1,46 @@
 module Firecrawl
   class BatchScrapeOptions
-    include DynamicSchema::Definable 
+    include DynamicSchema::Definable
     include Helpers
 
-    schema do 
-      proxy                 Symbol, in: [ :basic, :stealth, :auto ] 
-      skip_tls_verification [ TrueClass, FalseClass ], as: :skipTlsVerification
-      mobile                [ TrueClass, FalseClass ]
-      location              arguments: :country do  
-        country             String, required: true # two digit country code
-        languages           String, array: true #en-US jp etc
-      end
-      max_age               Integer, as: :maxAge
-      headers               Hash
+    WEBHOOK_EVENTS = [ :completed, :page, :failed, :started ]
 
-      only_main_content     [ TrueClass, FalseClass ], as: :onlyMainContent 
-      include_tags          String, as: :includeTags, array: true 
-      exclude_tags          String, as: :excludeTags, array: true 
-      remove_base64_images  [ TrueClass, FalseClass ], as: :removeBase64Images
-      block_ads             [ TrueClass, FalseClass ], as: :blockAds
+    schema do
+      # reuse all scrape options
+      instance_eval( &ScrapeOptions.schema )
 
-      wait_for              Integer, as: :waitFor
-      timeout               Integer 
-      parsers               Symbol, array: true, in: [ :pdf ]
+      # batch-specific options
+      max_concurrency       Integer, as: :maxConcurrency
+      ignore_invalid_urls   [ TrueClass, FalseClass ], as: :ignoreInvalidURLs
 
-      formats               Symbol, in: ScrapeOptions::FORMATS, array: true
-      screenshot            do 
-        type                String, default: 'screenshot'
-        full_page           [ TrueClass, FalseClass ], as: :fullPage 
-        quality             Integer, in: 0..100
-        viewport            do 
-          height            Integer, required: true
-          width             Integer, required: true 
-        end
-      end
-
-      webhook               do 
-        url                 URI, required: true 
+      # batch-specific: webhook notifications
+      webhook               do
+        url                 String, required: true
         headers             Hash
-        metadata            Hash 
-        events              Symbol, array: true, in: [ :completed, :page, :failed, :started ]
-      end 
-
-      cache                 [ TrueClass, FalseClass ], as: :storeInCache
-      zero_data_retention   [ TrueClass, FalseClass ], as: :zeroDataRetention
+        metadata            Hash
+        events              Symbol, array: true, in: WEBHOOK_EVENTS
+      end
     end
 
     def self.build( options = nil, &block )
       new( api_options: builder.build( options, &block ) )
-    end 
+    end
 
     def self.build!( options = nil, &block )
       new( api_options: builder.build!( options, &block ) )
-    end 
+    end
+
+    def self.normalize_options( options )
+      ScrapeOptions.normalize_options( options )
+    end
 
     def initialize( options = nil, api_options: nil )
       @options = self.class.builder.build( options || {} )
-      @options = api_options.merge( @options ) if api_options 
+      @options = api_options.merge( @options ) if api_options
     end
 
     def to_h
-      @options.to_h 
+      @options.to_h
     end
 
   end

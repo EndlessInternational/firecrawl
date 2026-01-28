@@ -135,6 +135,8 @@ while response.success?
 end
 ```
 
+For complete documentation of all batch scrape options and response fields, see [Batch Scrape Documentation](readme/batch_scrape.md).
+
 ### Map
 
 The map endpoint retrieves a site's URL structure without scraping content. This is useful for discovering pages before scraping:
