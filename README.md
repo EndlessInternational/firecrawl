@@ -177,13 +177,17 @@ end
 response = request.submit( 'https://example.com', options )
 
 while response.success?
-  crawl_result = response.result
-  crawl_result.each do | scrape_result |
+  result = response.result
+  result.each do | scrape_result |
     puts scrape_result.metadata[ 'title' ]
   end
-  break unless crawl_result.scraping?
+  break unless result.crawling?
   sleep 1
-  response = request.retrieve( crawl_result )
+  response = request.retrieve( result )
+end
+```
+
+For complete documentation of all crawl options and response fields, see [Crawl Documentation](readme/crawl.md).
 end
 ```
 
