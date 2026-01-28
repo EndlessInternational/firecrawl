@@ -118,7 +118,7 @@ The batch scrape endpoint processes multiple URLs efficiently. It returns result
 request = Firecrawl::BatchScrapeRequest.new( api_key: ENV[ 'FIRECRAWL_API_KEY' ] )
 
 urls = [ 'https://example.com', 'https://example.org' ]
-options = Firecrawl::ScrapeOptions.build do
+options = Firecrawl::BatchScrapeOptions.build do
   formats [ :markdown ]
   only_main_content true
 end
@@ -126,13 +126,13 @@ end
 response = request.submit( urls, options )
 
 while response.success?
-  batch_result = response.result
-  batch_result.each do | scrape_result |
+  result = response.result
+  result.each do | scrape_result |
     puts scrape_result.markdown
   end
-  break unless batch_result.scraping?
+  break unless result.scraping?
   sleep 1
-  response = request.retrieve( batch_result )
+  response = request.retrieve( result )
 end
 ```
 
@@ -153,8 +153,8 @@ end
 response = request.submit( 'https://example.com', options )
 
 if response.success?
-  response.result.links.each do | link |
-    puts link
+  response.result.each do | link |
+    puts link.url
   end
 end
 ```
